@@ -14,7 +14,7 @@ enum ObjectError: String, Error {
     case outOfMemory
 }
 
-class HomeViewModel: ViewModel {
+class HomeViewModel {
     
     private let service: ImageServiceInterface
     private let selectedImage: BehaviorRelay<PixabayImage?> = .init(value: nil)

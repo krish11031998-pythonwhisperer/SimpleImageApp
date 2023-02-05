@@ -49,7 +49,6 @@
 		EFF447B1298FB79D00458A4C /* Insets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44763298FB79D00458A4C /* Insets.swift */; };
 		EFF447B2298FB79D00458A4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44765298FB79D00458A4C /* ViewController.swift */; };
 		EFF447B3298FB79D00458A4C /* ViewController+NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44766298FB79D00458A4C /* ViewController+NavBar.swift */; };
-		EFF447B4298FB79D00458A4C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44767298FB79D00458A4C /* ViewModel.swift */; };
 		EFF447B5298FB79D00458A4C /* ActionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44768298FB79D00458A4C /* ActionProvider.swift */; };
 		EFF447B6298FB79D00458A4C /* LargeImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4476B298FB79D00458A4C /* LargeImageCell.swift */; };
 		EFF447B7298FB79D00458A4C /* LargeImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFF4476C298FB79D00458A4C /* LargeImageCell.xib */; };
@@ -151,7 +150,6 @@
 		EFF44763298FB79D00458A4C /* Insets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Insets.swift; sourceTree = "<group>"; };
 		EFF44765298FB79D00458A4C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EFF44766298FB79D00458A4C /* ViewController+NavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+NavBar.swift"; sourceTree = "<group>"; };
-		EFF44767298FB79D00458A4C /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		EFF44768298FB79D00458A4C /* ActionProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionProvider.swift; sourceTree = "<group>"; };
 		EFF4476B298FB79D00458A4C /* LargeImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeImageCell.swift; sourceTree = "<group>"; };
 		EFF4476C298FB79D00458A4C /* LargeImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LargeImageCell.xib; sourceTree = "<group>"; };
@@ -417,7 +415,6 @@
 			children = (
 				EFF44765298FB79D00458A4C /* ViewController.swift */,
 				EFF44766298FB79D00458A4C /* ViewController+NavBar.swift */,
-				EFF44767298FB79D00458A4C /* ViewModel.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -900,7 +897,6 @@
 				EFF447D2298FB79D00458A4C /* OnboardingViewModelInterface.swift in Sources */,
 				EFE023E12990078E00022745 /* UserDefaults.swift in Sources */,
 				EFF447C2298FB79D00458A4C /* InfoCell.swift in Sources */,
-				EFF447B4298FB79D00458A4C /* ViewModel.swift in Sources */,
 				EFF447AF298FB79D00458A4C /* CGFloat.swift in Sources */,
 				EFF447A9298FB79D00458A4C /* UIImageView.swift in Sources */,
 				EFF447BD298FB79D00458A4C /* TextField.swift in Sources */,
