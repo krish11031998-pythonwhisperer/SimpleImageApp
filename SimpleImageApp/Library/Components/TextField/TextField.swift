@@ -70,14 +70,29 @@ class TextField: UITextField {
 //MARK: - TextField + Observables
 extension Reactive where Base == TextField {
     
-    var isValid: Observable<Bool> {
+    var isValid: Driver<Bool> {
         base.rx.controlEvent(.editingChanged)
             .withUnretained(base)
             .map { _ in
                 guard let text = base.text else { return false }
                 return base.type.validators.map { $0.isValid(with: text) }.reduce(true, { $0 && $1} )
             }
-            .asObservable()
+            .asDriver(onErrorJustReturn: false)
+    }
+    
+    
+    var errorText: Driver<String?> {
+        
+        let end = base.rx.controlEvent(.editingDidEnd).asObservable()
+        let endOnExit = base.rx.controlEvent(.editingDidEndOnExit).asObservable()
+        
+        return Observable.merge([end, endOnExit])
+            .withUnretained(base)
+            .map { _ in
+                guard let text = base.text else { return nil }
+                return base.type.validators.filter { !$0.isValid(with: text) }.first?.text
+            }
+            .asDriver(onErrorJustReturn: nil)
     }
     
     var edittingEnded: Observable<Bool> {

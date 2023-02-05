@@ -51,15 +51,26 @@ class TextFieldView: UIView {
     }
     
     private func bind() {
-        self.rx.isValid
+        textFeild.rx.errorText
+            .drive(errText)
+            .disposed(by: bag)
+        
+        textFeild.rx.isValid
             .distinctUntilChanged()
-            .drive(isValid)
+            .filter { $0 }
+            .drive(clearErrText)
             .disposed(by: bag)
     }
     
-    private var isValid: Binder<Bool> {
-        Binder(self) { host, isValid in
-            host.infoLabel.text = !isValid ? "Not Valid" : nil
+    private var errText: Binder<String?> {
+        Binder(self) { host, text in
+            host.infoLabel.text = text
+        }
+    }
+    
+    private var clearErrText: Binder<Bool> {
+        Binder(self) { host, _ in
+            host.infoLabel.text = nil
         }
     }
     
