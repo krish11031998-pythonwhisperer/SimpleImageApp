@@ -1,6 +1,6 @@
 //
 //  LoginServiceInterface.swift
-//  VuzAssessment
+//  SimpleImageApp
 //
 //  Created by Krishna Venkatramani on 04/02/2023.
 //

@@ -1,6 +1,6 @@
 //
 //  URLRequest.swift
-//  VuzAssessment
+//  SimpleImageApp
 //
 //  Created by Krishna Venkatramani on 03/02/2023.
 //
