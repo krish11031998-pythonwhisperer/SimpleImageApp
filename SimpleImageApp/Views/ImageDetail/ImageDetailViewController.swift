@@ -1,17 +1,17 @@
 //
-//  ImageDetail.swift
-//  VuzAssessment
+//  NewImageDetailViewController.swift
+//  SimpleImageApp
 //
-//  Created by Krishna Venkatramani on 03/02/2023.
+//  Created by Krishna Venkatramani on 05/02/2023.
 //
 
-import Foundation
 import UIKit
+import RxCocoa
 import RxSwift
 
-class ImageDetailController: ViewController {
-    
-    private lazy var tableView: UITableView = { .standardTableView() }()
+class ImageDetailViewController: ViewController {
+
+    @IBOutlet weak var tableView: UITableView!
     private let viewModel: ImageDetailViewModel
     private var bag: DisposeBag = .init()
     
@@ -26,17 +26,10 @@ class ImageDetailController: ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
         setupNavBar()
         bind()
     }
-    
-    private func setupView() {
-        view.addSubview(tableView)
-        view.setFittingContraints(childView: tableView, insets: .zero)
-        tableView.backgroundColor = .surfaceBackground
-    }
-    
+
     private func bind() {
         let output = viewModel.transform()
         
@@ -46,5 +39,4 @@ class ImageDetailController: ViewController {
             }
             .disposed(by: bag)
     }
-    
 }

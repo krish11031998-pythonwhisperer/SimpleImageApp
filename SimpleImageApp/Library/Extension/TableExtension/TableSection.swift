@@ -52,6 +52,7 @@ extension TableDataSource: UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let label = UILabel()
         label.font = .preferredFont(forTextStyle: .headline)
+        label.textColor = .textColor
         label.text = sections[section].heading
         return label.embedView(inset: .init(top: 20, left: 20, bottom: 4, right: 20))
     }
@@ -79,8 +80,6 @@ extension UITableView {
     func reloadData(_ dataSource: TableDataSource) {
         self.source = dataSource
         self.dataSource = self.source
-        //self.delegate = self.source
-        
         self.reloadData()
     }
 }

@@ -10,6 +10,11 @@
 		2D41DAA3F3693219A605227C /* Pods_SimpleImageAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999B8B55A04AD50BD8ADDB98 /* Pods_SimpleImageAppTests.framework */; };
 		9D2D6489EE039EFE8E57A160 /* Pods_SimpleImageApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0F52BBF81E3F4716FCC523 /* Pods_SimpleImageApp.framework */; };
 		B12BE97AF32D05D92AF87454 /* Pods_SimpleImageApp_SimpleImageAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2919EFE5B9773E2A983F47CD /* Pods_SimpleImageApp_SimpleImageAppUITests.framework */; };
+		EFE023B7298FBF8400022745 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE023B4298FBF8400022745 /* HomeViewModel.swift */; };
+		EFE023B8298FBF8400022745 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE023B5298FBF8400022745 /* HomeViewController.xib */; };
+		EFE023B9298FBF8400022745 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE023B6298FBF8400022745 /* HomeViewController.swift */; };
+		EFE023C7298FCA2B00022745 /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE023C5298FCA2B00022745 /* ImageDetailViewController.swift */; };
+		EFE023C8298FCA2B00022745 /* ImageDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE023C6298FCA2B00022745 /* ImageDetailViewController.xib */; };
 		EFF4471D298FB74200458A4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4471C298FB74200458A4C /* AppDelegate.swift */; };
 		EFF4471F298FB74200458A4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4471E298FB74200458A4C /* SceneDelegate.swift */; };
 		EFF44726298FB74300458A4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFF44725298FB74300458A4C /* Assets.xcassets */; };
@@ -61,10 +66,7 @@
 		EFF447CB298FB79D00458A4C /* RegisterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4478C298FB79D00458A4C /* RegisterService.swift */; };
 		EFF447CC298FB79D00458A4C /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4478E298FB79D00458A4C /* LoginService.swift */; };
 		EFF447CD298FB79D00458A4C /* LoginServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4478F298FB79D00458A4C /* LoginServiceInterface.swift */; };
-		EFF447CE298FB79D00458A4C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44792298FB79D00458A4C /* HomeViewModel.swift */; };
-		EFF447CF298FB79D00458A4C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44793298FB79D00458A4C /* HomeViewController.swift */; };
 		EFF447D0298FB79D00458A4C /* ImageDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44795298FB79D00458A4C /* ImageDetailViewModel.swift */; };
-		EFF447D1298FB79D00458A4C /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44796298FB79D00458A4C /* ImageDetailViewController.swift */; };
 		EFF447D2298FB79D00458A4C /* OnboardingViewModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44799298FB79D00458A4C /* OnboardingViewModelInterface.swift */; };
 		EFF447D3298FB79D00458A4C /* OnboardingVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4479A298FB79D00458A4C /* OnboardingVIewController.swift */; };
 		EFF447D4298FB79D00458A4C /* OnboardingNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4479B298FB79D00458A4C /* OnboardingNavigation.swift */; };
@@ -100,6 +102,11 @@
 		999B8B55A04AD50BD8ADDB98 /* Pods_SimpleImageAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleImageAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CE9DB7F39A26FC6D6BB6F5 /* Pods-SimpleImageAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleImageAppTests.release.xcconfig"; path = "Target Support Files/Pods-SimpleImageAppTests/Pods-SimpleImageAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		E7A979BC4CB40C5889593677 /* Pods-SimpleImageApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleImageApp.debug.xcconfig"; path = "Target Support Files/Pods-SimpleImageApp/Pods-SimpleImageApp.debug.xcconfig"; sourceTree = "<group>"; };
+		EFE023B4298FBF8400022745 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		EFE023B5298FBF8400022745 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		EFE023B6298FBF8400022745 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EFE023C5298FCA2B00022745 /* ImageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
+		EFE023C6298FCA2B00022745 /* ImageDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageDetailViewController.xib; sourceTree = "<group>"; };
 		EFF44719298FB74200458A4C /* SimpleImageApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleImageApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFF4471C298FB74200458A4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFF4471E298FB74200458A4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,10 +162,7 @@
 		EFF4478C298FB79D00458A4C /* RegisterService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterService.swift; sourceTree = "<group>"; };
 		EFF4478E298FB79D00458A4C /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		EFF4478F298FB79D00458A4C /* LoginServiceInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginServiceInterface.swift; sourceTree = "<group>"; };
-		EFF44792298FB79D00458A4C /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		EFF44793298FB79D00458A4C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EFF44795298FB79D00458A4C /* ImageDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDetailViewModel.swift; sourceTree = "<group>"; };
-		EFF44796298FB79D00458A4C /* ImageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
 		EFF44799298FB79D00458A4C /* OnboardingViewModelInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewModelInterface.swift; sourceTree = "<group>"; };
 		EFF4479A298FB79D00458A4C /* OnboardingVIewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingVIewController.swift; sourceTree = "<group>"; };
 		EFF4479B298FB79D00458A4C /* OnboardingNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingNavigation.swift; sourceTree = "<group>"; };
@@ -217,8 +221,27 @@
 				0864A9D2F4B84B50155F99F9 /* Pods-SimpleImageAppTests.debug.xcconfig */,
 				B2CE9DB7F39A26FC6D6BB6F5 /* Pods-SimpleImageAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EFE023B3298FBF8400022745 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EFE023B4298FBF8400022745 /* HomeViewModel.swift */,
+				EFE023B5298FBF8400022745 /* HomeViewController.xib */,
+				EFE023B6298FBF8400022745 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EFE023C4298FCA2B00022745 /* ImageDetail */ = {
+			isa = PBXGroup;
+			children = (
+				EFF44795298FB79D00458A4C /* ImageDetailViewModel.swift */,
+				EFE023C5298FCA2B00022745 /* ImageDetailViewController.swift */,
+				EFE023C6298FCA2B00022745 /* ImageDetailViewController.xib */,
+			);
+			path = ImageDetail;
 			sourceTree = "<group>";
 		};
 		EFF44710298FB74200458A4C = {
@@ -512,29 +535,11 @@
 		EFF44790298FB79D00458A4C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EFF44791298FB79D00458A4C /* Home */,
-				EFF44794298FB79D00458A4C /* ImageDetail */,
+				EFE023C4298FCA2B00022745 /* ImageDetail */,
+				EFE023B3298FBF8400022745 /* Home */,
 				EFF44797298FB79D00458A4C /* Onboarding */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		EFF44791298FB79D00458A4C /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				EFF44792298FB79D00458A4C /* HomeViewModel.swift */,
-				EFF44793298FB79D00458A4C /* HomeViewController.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		EFF44794298FB79D00458A4C /* ImageDetail */ = {
-			isa = PBXGroup;
-			children = (
-				EFF44795298FB79D00458A4C /* ImageDetailViewModel.swift */,
-				EFF44796298FB79D00458A4C /* ImageDetailViewController.swift */,
-			);
-			path = ImageDetail;
 			sourceTree = "<group>";
 		};
 		EFF44797298FB79D00458A4C /* Onboarding */ = {
@@ -684,11 +689,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFE023C8298FCA2B00022745 /* ImageDetailViewController.xib in Resources */,
 				EFF447BF298FB79D00458A4C /* TextFieldView.xib in Resources */,
 				EFF447C1298FB79D00458A4C /* InfoCell.xib in Resources */,
 				EFF44729298FB74300458A4C /* LaunchScreen.storyboard in Resources */,
 				EFF447B7298FB79D00458A4C /* LargeImageCell.xib in Resources */,
 				EFF44726298FB74300458A4C /* Assets.xcassets in Resources */,
+				EFE023B8298FBF8400022745 /* HomeViewController.xib in Resources */,
 				EFF447B8298FB79D00458A4C /* ImageCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -823,12 +830,10 @@
 				EFF447AD298FB79D00458A4C /* TableView+Rx.swift in Sources */,
 				EFF447AB298FB79D00458A4C /* TableCellProvider.swift in Sources */,
 				EFF447AE298FB79D00458A4C /* TableViewExtension.swift in Sources */,
-				EFF447CF298FB79D00458A4C /* HomeViewController.swift in Sources */,
 				EFF447BB298FB79D00458A4C /* TextFieldValidator.swift in Sources */,
 				EFF447D7298FB79D00458A4C /* LoginViewModel.swift in Sources */,
 				EFF447A2298FB79D00458A4C /* UIImageView+UIImage.swift in Sources */,
 				EFF447B6298FB79D00458A4C /* LargeImageCell.swift in Sources */,
-				EFF447D1298FB79D00458A4C /* ImageDetailViewController.swift in Sources */,
 				EFF447CA298FB79D00458A4C /* RegisterServiceInterface.swift in Sources */,
 				EFF447C4298FB79D00458A4C /* PixabayImageResult.swift in Sources */,
 				EFF447D4298FB79D00458A4C /* OnboardingNavigation.swift in Sources */,
@@ -838,6 +843,7 @@
 				EFF447A5298FB79D00458A4C /* URLRequest.swift in Sources */,
 				EFF447CC298FB79D00458A4C /* LoginService.swift in Sources */,
 				EFF447D0298FB79D00458A4C /* ImageDetailViewModel.swift in Sources */,
+				EFE023B9298FBF8400022745 /* HomeViewController.swift in Sources */,
 				EFF447B9298FB79D00458A4C /* ImageCell.swift in Sources */,
 				EFF447C6298FB79D00458A4C /* LoginModel.swift in Sources */,
 				EFF447AA298FB79D00458A4C /* String+Regex.swift in Sources */,
@@ -846,7 +852,6 @@
 				EFF447B2298FB79D00458A4C /* ViewController.swift in Sources */,
 				EFF447C3298FB79D00458A4C /* ImageCatalogue.swift in Sources */,
 				EFF447C7298FB79D00458A4C /* ImageServiceInterface.swift in Sources */,
-				EFF447CE298FB79D00458A4C /* HomeViewModel.swift in Sources */,
 				EFF447CD298FB79D00458A4C /* LoginServiceInterface.swift in Sources */,
 				EFF447D5298FB79D00458A4C /* RegisterViewController.swift in Sources */,
 				EFF447A4298FB79D00458A4C /* UIImage+Cache.swift in Sources */,
@@ -866,6 +871,8 @@
 				EFF4471D298FB74200458A4C /* AppDelegate.swift in Sources */,
 				EFF447A7298FB79D00458A4C /* ViewHeirachy.swift in Sources */,
 				EFF447D6298FB79D00458A4C /* RegisterViewModel.swift in Sources */,
+				EFE023C7298FCA2B00022745 /* ImageDetailViewController.swift in Sources */,
+				EFE023B7298FBF8400022745 /* HomeViewModel.swift in Sources */,
 				EFF447C9298FB79D00458A4C /* PixabayEndpoints.swift in Sources */,
 				EFF447CB298FB79D00458A4C /* RegisterService.swift in Sources */,
 				EFF447A8298FB79D00458A4C /* ViewHelpers.swift in Sources */,

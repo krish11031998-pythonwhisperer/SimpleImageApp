@@ -1,16 +1,17 @@
 //
-//  ViewController.swift
-//  VuzAssessment
+//  NewHomeViewController.swift
+//  SimpleImageApp
 //
-//  Created by Krishna Venkatramani on 03/02/2023.
+//  Created by Krishna Venkatramani on 05/02/2023.
 //
 
 import UIKit
 import RxSwift
+import RxCocoa
 
 class HomeViewController: ViewController {
 
-    private lazy var tableView: UITableView = { .standardTableView() }()
+    @IBOutlet weak var tableView: UITableView!
     private let viewModel: HomeViewModel
     private var bag: DisposeBag = .init()
     //MARK: - Overriden Methods
@@ -27,20 +28,10 @@ class HomeViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        setupView()
+        setupNavBar(title: "Pixabay Images")
+        view.backgroundColor = .surfaceBackground
         bind()
     }
-    
-    
-    //MARK: - Protected Methods
-    private func setupView() {
-        view.addSubview(tableView)
-        view.setFittingContraints(childView: tableView, insets: .zero)
-        view.backgroundColor = .surfaceBackground
-        tableView.backgroundColor = .surfaceBackground
-        mainNavBar(title: "Pixabay Images")
-    }
-
     
     private func bind() {
         
@@ -69,7 +60,7 @@ class HomeViewController: ViewController {
                 switch nav {
                 case .toImage(let image):
                     print("(DEBUG) SelectedImage: ", image.id)
-                    self?.navigationController?.pushViewController(ImageDetailController(viewModel: .init(selectedImage: image)), animated: true)
+                    self?.navigationController?.pushViewController(ImageDetailViewController(viewModel: .init(selectedImage: image)), animated: true)
                 default:
                     break
                 }
@@ -78,10 +69,10 @@ class HomeViewController: ViewController {
     
         tableView.rx.didSelectItemDisposable.disposed(by: bag)
         
-        tableView.rx.loadNextPage
-            .distinctUntilChanged()
-            .subscribe(onNext: { print("(DEBUG) Load Next Page: ", $0) })
-            .disposed(by: bag)
+//        tableView.rx.loadNextPage
+//            .distinctUntilChanged()
+//            .subscribe(onNext: { print("(DEBUG) Load Next Page: ", $0) })
+//            .disposed(by: bag)
         
     }
     
