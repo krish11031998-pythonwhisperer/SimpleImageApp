@@ -74,6 +74,7 @@ class HomeViewController: ViewController {
     
     private func setupLogoutButton() {
         logoutButton.setTitle("Logout", for: .normal)
+        logoutButton.titleLabel?.font = .systemFont(ofSize: 15, weight: .medium)
         navigationItem.rightBarButtonItem = .init(customView: logoutButton)
     }
     
