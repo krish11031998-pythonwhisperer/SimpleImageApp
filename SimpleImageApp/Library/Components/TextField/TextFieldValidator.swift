@@ -30,3 +30,9 @@ struct TwelveCharactersLong: TextValidationInterface {
     var text: String { "Must at least be between 6 and 12 characters long" }
     var regex: String { "^.{6,12}$" }
 }
+
+//MARK: - AgeValidator
+struct AgeValidator: TextValidationInterface {
+    var text: String { "You must be between the ages 18 - 99" }
+    var regex: String { "^(1[8-9]|[2-9][0-9])$" }
+}

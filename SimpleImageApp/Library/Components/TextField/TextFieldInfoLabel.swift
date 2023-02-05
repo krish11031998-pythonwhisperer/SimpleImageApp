@@ -12,12 +12,14 @@ class TextFieldInfoLabel: UILabel {
     
     override var text: String? {
         didSet {
-            UIView.transition(with: self, duration: 0.3) {
-                guard let text = self.text else {
-                    self.isHidden = true
-                    return
+            DispatchQueue.main.async {
+                UIView.transition(with: self, duration: 0.3) {
+                    guard self.text != nil else {
+                        self.isHidden = true
+                        return
+                    }
+                    self.isHidden = false
                 }
-                self.isHidden = false
             }
         }
     }

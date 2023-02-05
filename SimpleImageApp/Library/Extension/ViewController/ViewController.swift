@@ -20,6 +20,15 @@ class ViewController: UIViewController {
     //MARK: - Protected Methods
     private func setupView() {
         navigationController?.interactivePopGestureRecognizer?.delegate = self
+        let edittingGesture = UITapGestureRecognizer(target: self, action: #selector(endEditting))
+        edittingGesture.cancelsTouchesInView = false
+        view.addGestureRecognizer(edittingGesture)
+    }
+    
+    @objc
+    private func endEditting() {
+        view.endEditing(true)
+        
     }
 }
 

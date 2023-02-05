@@ -10,6 +10,7 @@
 		2D41DAA3F3693219A605227C /* Pods_SimpleImageAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999B8B55A04AD50BD8ADDB98 /* Pods_SimpleImageAppTests.framework */; };
 		9D2D6489EE039EFE8E57A160 /* Pods_SimpleImageApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0F52BBF81E3F4716FCC523 /* Pods_SimpleImageApp.framework */; };
 		B12BE97AF32D05D92AF87454 /* Pods_SimpleImageApp_SimpleImageAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2919EFE5B9773E2A983F47CD /* Pods_SimpleImageApp_SimpleImageAppUITests.framework */; };
+		EF30ECAF29901C0600AD2FA6 /* UITextField+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF30ECAE29901C0600AD2FA6 /* UITextField+Rx.swift */; };
 		EFE023B7298FBF8400022745 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE023B4298FBF8400022745 /* HomeViewModel.swift */; };
 		EFE023B8298FBF8400022745 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE023B5298FBF8400022745 /* HomeViewController.xib */; };
 		EFE023B9298FBF8400022745 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE023B6298FBF8400022745 /* HomeViewController.swift */; };
@@ -107,6 +108,7 @@
 		999B8B55A04AD50BD8ADDB98 /* Pods_SimpleImageAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleImageAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CE9DB7F39A26FC6D6BB6F5 /* Pods-SimpleImageAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleImageAppTests.release.xcconfig"; path = "Target Support Files/Pods-SimpleImageAppTests/Pods-SimpleImageAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		E7A979BC4CB40C5889593677 /* Pods-SimpleImageApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleImageApp.debug.xcconfig"; path = "Target Support Files/Pods-SimpleImageApp/Pods-SimpleImageApp.debug.xcconfig"; sourceTree = "<group>"; };
+		EF30ECAE29901C0600AD2FA6 /* UITextField+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Rx.swift"; sourceTree = "<group>"; };
 		EFE023B4298FBF8400022745 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		EFE023B5298FBF8400022745 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		EFE023B6298FBF8400022745 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -234,6 +236,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		EF30ECAD29901BEF00AD2FA6 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				EF30ECAE29901C0600AD2FA6 /* UITextField+Rx.swift */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
 		EFE023B3298FBF8400022745 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -340,6 +350,7 @@
 		EFF4474D298FB79D00458A4C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				EF30ECAD29901BEF00AD2FA6 /* UITextField */,
 				EFF4474E298FB79D00458A4C /* UIImage */,
 				EFF44752298FB79D00458A4C /* Network */,
 				EFF44755298FB79D00458A4C /* View */,
@@ -895,6 +906,7 @@
 				EFF447BE298FB79D00458A4C /* TextFieldInfoLabel.swift in Sources */,
 				EFF447BA298FB79D00458A4C /* TextFieldType.swift in Sources */,
 				EFF447D2298FB79D00458A4C /* OnboardingViewModelInterface.swift in Sources */,
+				EF30ECAF29901C0600AD2FA6 /* UITextField+Rx.swift in Sources */,
 				EFE023E12990078E00022745 /* UserDefaults.swift in Sources */,
 				EFF447C2298FB79D00458A4C /* InfoCell.swift in Sources */,
 				EFF447AF298FB79D00458A4C /* CGFloat.swift in Sources */,

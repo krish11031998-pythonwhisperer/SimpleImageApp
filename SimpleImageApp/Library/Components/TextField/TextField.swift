@@ -82,12 +82,8 @@ extension Reactive where Base == TextField {
     
     
     var errorText: Driver<String?> {
-        
-        let end = base.rx.controlEvent(.editingDidEnd).asObservable()
-        let endOnExit = base.rx.controlEvent(.editingDidEndOnExit).asObservable()
-        
-        return Observable.merge([end, endOnExit])
-            .withUnretained(base)
+ 
+        return base.rx.finishedEditting
             .map { _ in
                 guard let text = base.text else { return nil }
                 return base.type.validators.filter { !$0.isValid(with: text) }.first?.text

@@ -40,7 +40,6 @@ class TextFieldView: UIView {
     private func setupView() {
         commonInit()
         titleLabel.text = type.placeHolder
-        infoLabel.text = "info"
         infoLabel.isHidden = true
         infoLabel.textColor = .red
         infoLabel.font = .systemFont(ofSize: 12, weight: .medium)
@@ -99,7 +98,7 @@ extension Reactive where Base == TextFieldView {
     }
     
     var textEdittingDone: Driver<Bool> {
-        base.textFeild.rx.edittingEnded.asDriver(onErrorJustReturn: false)
+        base.textFeild.rx.finishedEditting.asDriver(onErrorJustReturn: false)
     }
     
 }

@@ -96,12 +96,13 @@ class RegisterViewController: ViewController {
        }
        
        private var isValid: Driver<Bool> {
-           Driver.combineLatest(emailTextField.rx.isValid, passwordTextField.rx.isValid, confirmPasswordTextField.rx.isValid) { $0 && $1 && $2 }
+           Driver.combineLatest(emailTextField.rx.isValid, passwordTextField.rx.isValid, confirmPasswordTextField.rx.isValid, ageTextField.rx.isValid) { $0 && $1 && $2 && $3 }
                .distinctUntilChanged()
        }
        
        private var isEqual: Driver<Bool> {
            Driver.combineLatest(passwordTextField.rx.text, confirmPasswordTextField.rx.text) { $0 == $1 }
+               .withLatestFrom(confirmPasswordTextField.rx.textEdittingDone) { $0 && $1 }
                .distinctUntilChanged()
        }
        

@@ -33,7 +33,7 @@ extension TextFieldType {
         case .password:
             return [TwelveCharactersLong()]
         default:
-            return []
+            return [AgeValidator()]
         }
     }
     
