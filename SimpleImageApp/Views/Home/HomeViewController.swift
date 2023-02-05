@@ -54,7 +54,6 @@ class HomeViewController: ViewController {
             .drive { [weak self] nav in
                 switch nav {
                 case .toImage(let image):
-                    print("(DEBUG) SelectedImage: ", image.id)
                     self?.navigationController?.pushViewController(ImageDetailViewController(viewModel: .init(selectedImage: image)), animated: true)
                 default:
                     break
