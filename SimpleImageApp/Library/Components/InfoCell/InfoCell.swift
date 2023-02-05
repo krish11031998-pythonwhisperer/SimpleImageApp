@@ -20,7 +20,7 @@ class InfoCell: ConfigurableCell {
     @IBOutlet weak var stack: UIStackView!
     private func setupView() {
         stack.isLayoutMarginsRelativeArrangement = true
-        stack.directionalLayoutMargins = .init(vertical: 16, horizontal: 12)
+        stack.directionalLayoutMargins = .init(vertical: 20, horizontal: 12)
         stack.backgroundColor = .surfaceBackground
         stack.cornerRadius = 16
         stack.applyShadow()

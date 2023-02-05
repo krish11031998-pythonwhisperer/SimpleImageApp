@@ -8,7 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ULR-Nd-SRM" customClass="ImageCell" customModule="VuzAssessment" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ULR-Nd-SRM" customClass="ImageCell" customModule="SimpleImageApp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="393" height="170"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ULR-Nd-SRM" id="RMa-Ga-nXv">
@@ -61,7 +61,7 @@
                 <outlet property="userImage" destination="h1m-Am-Jzz" id="TfD-Rj-ofJ"/>
                 <outlet property="userName" destination="wGk-wF-zQa" id="evf-hy-Dy6"/>
             </connections>
-            <point key="canvasLocation" x="-195" y="-298"/>
+            <point key="canvasLocation" x="-196.18320610687022" y="-298.59154929577466"/>
         </tableViewCell>
     </objects>
 </document>
