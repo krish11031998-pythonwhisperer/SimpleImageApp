@@ -44,7 +44,7 @@ class LoginViewController: ViewController {
         loginButton.setTitle("Login Into the App", for: .normal)
         loginButton.isEnabled = false
         
-        registerButton.setTitle("Register", for: .normal)
+        registerButton.setTitle("New User? Register", for: .normal)
     }
     
     private func bind() {

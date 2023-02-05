@@ -23,6 +23,7 @@
 		EFE023D4298FD95F00022745 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE023D2298FD95F00022745 /* OnboardingViewController.xib */; };
 		EFE023DD298FFE6600022745 /* UserInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE023DB298FFE6600022745 /* UserInfoCell.swift */; };
 		EFE023DE298FFE6600022745 /* UserInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE023DC298FFE6600022745 /* UserInfoCell.xib */; };
+		EFE023E12990078E00022745 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE023E02990078E00022745 /* UserDefaults.swift */; };
 		EFF4471D298FB74200458A4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4471C298FB74200458A4C /* AppDelegate.swift */; };
 		EFF4471F298FB74200458A4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4471E298FB74200458A4C /* SceneDelegate.swift */; };
 		EFF44726298FB74300458A4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFF44725298FB74300458A4C /* Assets.xcassets */; };
@@ -120,6 +121,7 @@
 		EFE023D2298FD95F00022745 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
 		EFE023DB298FFE6600022745 /* UserInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCell.swift; sourceTree = "<group>"; };
 		EFE023DC298FFE6600022745 /* UserInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoCell.xib; sourceTree = "<group>"; };
+		EFE023E02990078E00022745 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		EFF44719298FB74200458A4C /* SimpleImageApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleImageApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFF4471C298FB74200458A4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFF4471E298FB74200458A4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -263,6 +265,14 @@
 			path = UserInfo;
 			sourceTree = "<group>";
 		};
+		EFE023DF2990078000022745 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				EFE023E02990078E00022745 /* UserDefaults.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
 		EFF44710298FB74200458A4C = {
 			isa = PBXGroup;
 			children = (
@@ -321,6 +331,7 @@
 		EFF4474C298FB79D00458A4C /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				EFE023DF2990078000022745 /* UserDefaults */,
 				EFF4474D298FB79D00458A4C /* Extension */,
 				EFF44769298FB79D00458A4C /* Components */,
 				EFF4477C298FB79D00458A4C /* Catalogue */,
@@ -887,6 +898,7 @@
 				EFF447BE298FB79D00458A4C /* TextFieldInfoLabel.swift in Sources */,
 				EFF447BA298FB79D00458A4C /* TextFieldType.swift in Sources */,
 				EFF447D2298FB79D00458A4C /* OnboardingViewModelInterface.swift in Sources */,
+				EFE023E12990078E00022745 /* UserDefaults.swift in Sources */,
 				EFF447C2298FB79D00458A4C /* InfoCell.swift in Sources */,
 				EFF447B4298FB79D00458A4C /* ViewModel.swift in Sources */,
 				EFF447AF298FB79D00458A4C /* CGFloat.swift in Sources */,

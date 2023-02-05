@@ -66,7 +66,7 @@ class RegisterViewController: ViewController {
            ageTextField.configureType(type: .age())
            
            registerButton.setTitle("Register", for: .normal)
-           loginButton.setTitle("Login", for: .normal)
+           loginButton.setTitle("Already a user? Login", for: .normal)
            registerButton.isEnabled = false
        }
        

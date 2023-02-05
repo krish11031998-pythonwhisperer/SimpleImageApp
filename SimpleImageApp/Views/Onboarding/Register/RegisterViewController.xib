@@ -60,7 +60,7 @@
                 </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" name="surfaceBackground"/>
             <constraints>
                 <constraint firstItem="cE2-RY-wpV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="BhD-f8-Vr5"/>
                 <constraint firstItem="cE2-RY-wpV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Sjt-fq-rwh"/>

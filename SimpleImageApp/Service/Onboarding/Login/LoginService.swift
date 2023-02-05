@@ -11,6 +11,7 @@ import RxSwift
 enum LoginError: String, Error {
     case emptyEmailOrPassword = "Empty Email and/or Password.\n Please enter valid email and/or password"
     case incorrectEmailOrPassword = "Incorrect Email and/or Password.\n Please enter valid email and/or password"
+    case noUserFound = "No User with the respective credentials was found, pls register"
 }
 
 extension LoginError: LocalizedError {
@@ -28,7 +29,13 @@ class LoginService: LoginServiceInterface {
                 return Disposables.create()
             }
             
-            if username == "krish.fabre@gmail.com" && password == "LeoMessi1010" {
+            guard let storedEmail: String = UserDefaultStoreKey.email.value(),
+                  let storedPassword: String = UserDefaultStoreKey.password.value() else {
+                observable.onError(LoginError.noUserFound)
+                return Disposables.create()
+            }
+            
+            if username == storedEmail && password == storedPassword {
                 observable.onNext(true)
             } else {
                 observable.onError(LoginError.incorrectEmailOrPassword)

@@ -10,7 +10,6 @@ import RxSwift
 
 enum RegisterError: String, Error {
     case emptyEmailPasswordOrAge = "Empty Email and/or Password and/or Age.\n Please enter valid email and/or password and/or age"
-    //case incorrectEmailPasswor = "Incorrect Email and/or Password.\n Please enter valid email and/or password"
     case userAge = "Users must be aged between 18 to 99"
 }
 
@@ -30,6 +29,8 @@ class RegisterService: RegisterServiceInterface {
             }
             
             if 18...99 ~= age {
+                UserDefaultStoreKey.email.setValue(email)
+                UserDefaultStoreKey.password.setValue(password)
                 observable.onNext(true)
             } else {
                 observable.onError(RegisterError.userAge)

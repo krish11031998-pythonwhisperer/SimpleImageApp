@@ -3,11 +3,12 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextFieldView" customModule="VuzAssessment" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextFieldView" customModule="SimpleImageApp" customModuleProvider="target">
             <connections>
                 <outlet property="infoLabel" destination="c4d-UF-vel" id="OXV-TC-npm"/>
                 <outlet property="stack" destination="YJD-9b-krF" id="cun-cZ-xWO"/>
@@ -26,7 +27,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hJm-7p-B3f" customClass="TextField" customModule="VuzAssessment" customModuleProvider="target">
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hJm-7p-B3f" customClass="TextField" customModule="SimpleImageApp" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="20.333333333333329" width="502" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="3hs-3x-hOQ"/>
@@ -34,7 +35,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4d-UF-vel" customClass="TextFieldInfoLabel" customModule="VuzAssessment" customModuleProvider="target">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4d-UF-vel" customClass="TextFieldInfoLabel" customModule="SimpleImageApp" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="70.333333333333314" width="502" height="71.666666666666686"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="I8c-Jn-Rsf"/>
@@ -45,7 +46,13 @@
                 </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="nBA-H6-IYf"/>
+            <color key="backgroundColor" name="surfaceBackground"/>
             <point key="canvasLocation" x="358.77862595419845" y="126.7605633802817"/>
         </stackView>
     </objects>
+    <resources>
+        <namedColor name="surfaceBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
