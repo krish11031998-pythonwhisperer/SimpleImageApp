@@ -49,12 +49,8 @@ extension TableDataSource: UITableViewDataSource {
         UITableView.automaticDimension
     }
     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let label = UILabel()
-        label.font = .preferredFont(forTextStyle: .headline)
-        label.textColor = .textColor
-        label.text = sections[section].heading
-        return label.embedView(inset: .init(top: 20, left: 20, bottom: 4, right: 20))
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        sections[section].heading
     }
 }
 

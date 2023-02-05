@@ -36,8 +36,8 @@ class RegisterViewController: ViewController {
     @IBOutlet weak var confirmPasswordTextField: TextFieldView!
     @IBOutlet weak var registerButton: CustomButton!
     @IBOutlet weak var loginButton: CustomButton!
-
     @IBOutlet weak var stack: UIStackView!
+    
     private var bag: DisposeBag = .init()
        private let viewModel: RegisterViewModel
        

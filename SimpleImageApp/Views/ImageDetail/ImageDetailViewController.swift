@@ -27,7 +27,13 @@ class ImageDetailViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavBar()
+        setupView()
         bind()
+    }
+    
+    private func setupView() {
+        tableView.contentInsetAdjustmentBehavior = .always
+        tableView.sectionHeaderHeight = UITableView.automaticDimension
     }
 
     private func bind() {
