@@ -43,6 +43,29 @@ extension UIViewController {
         navigationItem.titleView = label
     }
 
+    func setupNavBar(title: String? = nil) {
+        guard let nav = navigationController,
+              nav.viewControllers.count > 1 else {
+            mainNavBar(title: title)
+            return
+        }
+        
+        setupStandardNavbar(title: title)
+    }
+    
+    func pushTo(_ target: UIViewController) {
+        self.navigationController?.pushViewController(target, animated: true)
+    }
+    
+    func showErrorAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction: UIAlertAction = .init(title: "OK", style: .default)
+        alert.addAction(okAction)
+        DispatchQueue.main.async {
+            self.present(alert, animated: true)
+        }
+    }
+    
 }
 
 

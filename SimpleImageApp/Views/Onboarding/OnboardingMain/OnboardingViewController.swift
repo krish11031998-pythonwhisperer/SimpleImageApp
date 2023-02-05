@@ -50,9 +50,9 @@ class OnboardingViewController: ViewController {
             .drive { [weak self] nav in
                 switch nav {
                 case .login:
-                    self?.navigationController?.pushViewController(LoginViewController(viewModel: .init()), animated: true)
+                    self?.pushTo(LoginViewController())
                 case .register:
-                    self?.navigationController?.pushViewController(RegisterViewController(), animated: true)
+                    self?.pushTo(RegisterViewController())
                 default:
                     break
                 }

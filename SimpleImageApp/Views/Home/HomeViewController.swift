@@ -59,7 +59,7 @@ class HomeViewController: ViewController {
             .drive { [weak self] nav in
                 switch nav {
                 case .toImage(let image):
-                    self?.navigationController?.pushViewController(ImageDetailViewController(viewModel: .init(selectedImage: image)), animated: true)
+                    self?.pushTo(ImageDetailViewController(viewModel: .init(selectedImage: image)))
                 case .onboarding:
                     UserDefaultStoreKey.loggedIn.setValue(false)
                     self?.Onboarding()

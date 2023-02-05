@@ -37,7 +37,7 @@ class HomeViewModel: ViewModel {
         
         let initial = input.loadNextPage
             .asObservable()
-            .observe(on: SerialDispatchQueueScheduler(qos: .userInteractive))
+            .observe(on: SerialDispatchQueueScheduler(qos: .background))
             .flatMapLatest { [weak self] _ in
                 guard let self = self else {
                     return Observable<PixabayImageResult>.error(ObjectError.outOfMemory)
