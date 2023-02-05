@@ -34,12 +34,7 @@ class HomeViewController: ViewController {
     }
     
     private func bind() {
-        
-        tableView.rx.contentOffset
-                   .map { $0.y }
-                   .bind(onNext: { print($0) })
-                   .disposed(by: bag)
-        
+                
         let nextPage = tableView.rx.loadNextPage
             .distinctUntilChanged()
             .asDriver(onErrorJustReturn: false)
@@ -68,17 +63,5 @@ class HomeViewController: ViewController {
             .disposed(by: bag)
     
         tableView.rx.didSelectItemDisposable.disposed(by: bag)
-        
-//        tableView.rx.loadNextPage
-//            .distinctUntilChanged()
-//            .subscribe(onNext: { print("(DEBUG) Load Next Page: ", $0) })
-//            .disposed(by: bag)
-        
-    }
-    
-    private var scrollBinder: Binder<CGPoint> {
-        Binder(self) { host, offset in
-            print("(DEBUG) offset (via Binder): ", offset)
-        }
     }
 }

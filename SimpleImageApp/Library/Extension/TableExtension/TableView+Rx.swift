@@ -32,28 +32,10 @@ extension Reactive where Base: UIScrollView {
             .map { scrollView, offset in
                 let height = scrollView.contentSize.height
                 guard height >= UIScreen.main.bounds.height else { return false }
-                //print("(DEBUG) height: ", height)
-                //print("(DEBUG) offset: ", offset.y)
-                let state = (height - offset.y) <= UIScreen.main.bounds.height
-                //print("(DEBUG) state: ", state)
+                let state = (height - offset.y) <= UIScreen.main.bounds.height * 1.1
                 return state
             }
             .asObservable()
     }
-    
-//    var loadNextPage: Observable<Bool> {
-//
-//        base.rx.contentOffset
-//            .asObservable()
-//            .withUnretained(base)
-//            .map { base, offset in
-//                let height = base.contentSize.height
-//                print("(DEBUG) height: ", height)
-//                print("(DEBUG) offset: ", offset.y)
-//                return (height - offset.y) == UIScreen.main.bounds.height * 1.05
-//            }
-//            .asObservable()
-//    }
-    
     
 }

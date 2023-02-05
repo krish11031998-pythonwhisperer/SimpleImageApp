@@ -21,6 +21,8 @@
 		EFE023D0298FD01300022745 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE023CE298FD01300022745 /* RegisterViewController.xib */; };
 		EFE023D3298FD95F00022745 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE023D1298FD95F00022745 /* OnboardingViewController.swift */; };
 		EFE023D4298FD95F00022745 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE023D2298FD95F00022745 /* OnboardingViewController.xib */; };
+		EFE023D8298FF13600022745 /* NewImageCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE023D6298FF13600022745 /* NewImageCellTableViewCell.swift */; };
+		EFE023D9298FF13600022745 /* NewImageCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE023D7298FF13600022745 /* NewImageCellTableViewCell.xib */; };
 		EFF4471D298FB74200458A4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4471C298FB74200458A4C /* AppDelegate.swift */; };
 		EFF4471F298FB74200458A4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4471E298FB74200458A4C /* SceneDelegate.swift */; };
 		EFF44726298FB74300458A4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFF44725298FB74300458A4C /* Assets.xcassets */; };
@@ -116,6 +118,8 @@
 		EFE023CE298FD01300022745 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		EFE023D1298FD95F00022745 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		EFE023D2298FD95F00022745 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
+		EFE023D6298FF13600022745 /* NewImageCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewImageCellTableViewCell.swift; sourceTree = "<group>"; };
+		EFE023D7298FF13600022745 /* NewImageCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewImageCellTableViewCell.xib; sourceTree = "<group>"; };
 		EFF44719298FB74200458A4C /* SimpleImageApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleImageApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFF4471C298FB74200458A4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFF4471E298FB74200458A4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -248,6 +252,15 @@
 				EFE023C6298FCA2B00022745 /* ImageDetailViewController.xib */,
 			);
 			path = ImageDetail;
+			sourceTree = "<group>";
+		};
+		EFE023D5298FF10D00022745 /* NewImageCell */ = {
+			isa = PBXGroup;
+			children = (
+				EFE023D6298FF13600022745 /* NewImageCellTableViewCell.swift */,
+				EFE023D7298FF13600022745 /* NewImageCellTableViewCell.xib */,
+			);
+			path = NewImageCell;
 			sourceTree = "<group>";
 		};
 		EFF44710298FB74200458A4C = {
@@ -401,6 +414,7 @@
 		EFF44769298FB79D00458A4C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				EFE023D5298FF10D00022745 /* NewImageCell */,
 				EFF4476A298FB79D00458A4C /* LargeImageCell */,
 				EFF4476D298FB79D00458A4C /* ImageCell */,
 				EFF44770298FB79D00458A4C /* TextField */,
@@ -700,6 +714,7 @@
 			files = (
 				EFE023C8298FCA2B00022745 /* ImageDetailViewController.xib in Resources */,
 				EFF447BF298FB79D00458A4C /* TextFieldView.xib in Resources */,
+				EFE023D9298FF13600022745 /* NewImageCellTableViewCell.xib in Resources */,
 				EFE023D4298FD95F00022745 /* OnboardingViewController.xib in Resources */,
 				EFF447C1298FB79D00458A4C /* InfoCell.xib in Resources */,
 				EFE023CC298FCBD700022745 /* LoginViewController.xib in Resources */,
@@ -868,6 +883,7 @@
 				EFF447CD298FB79D00458A4C /* LoginServiceInterface.swift in Sources */,
 				EFF447A4298FB79D00458A4C /* UIImage+Cache.swift in Sources */,
 				EFF447C0298FB79D00458A4C /* CustomButton.swift in Sources */,
+				EFE023D8298FF13600022745 /* NewImageCellTableViewCell.swift in Sources */,
 				EFF447A3298FB79D00458A4C /* UIImage+URL.swift in Sources */,
 				EFF447BE298FB79D00458A4C /* TextFieldInfoLabel.swift in Sources */,
 				EFF447BA298FB79D00458A4C /* TextFieldType.swift in Sources */,

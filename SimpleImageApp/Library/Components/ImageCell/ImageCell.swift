@@ -28,6 +28,10 @@ class ImageCell: ConfigurableCell {
     @IBOutlet weak var heightConstraint: NSLayoutConstraint!
     private var bag: DisposeBag = .init()
     
+    override func awakeFromNib() {
+        setupView()
+    }
+    
     private func setupView() {
         userImage.setupAsStandardImage(cornerRadius: 20)
         imgView.setupAsStandardImage(cornerRadius: 16)
@@ -37,12 +41,17 @@ class ImageCell: ConfigurableCell {
     }
     
     func configure(with model: ImageCellModel) {
-        setupView()
         let imgModel = model.img
         imgView.loadImage(forURL: imgModel.webformatURL).disposed(by: bag)
         userImage.loadImage(forURL: imgModel.userImageURL).disposed(by: bag)
         userName.text = imgModel.user
         heightConstraint.constant = (UIScreen.main.bounds.width - 32)/imgModel.previewAspectRatio
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        imgView.image = nil
+        userImage.image = nil
     }
     
 }

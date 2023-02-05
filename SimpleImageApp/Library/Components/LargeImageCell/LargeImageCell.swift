@@ -32,7 +32,7 @@ class LargeImageCell: ConfigurableCell {
     
     func configure(with model: PixabayImage) {
         setupView()
-        imgView.loadImage(forURL: model.largeImageURL).disposed(by: bag)
+        imgView.loadImage(forURL: model.webformatURL).disposed(by: bag)
         image = model
         updateHeight()
     }

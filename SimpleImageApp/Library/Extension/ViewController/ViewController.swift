@@ -14,8 +14,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
     }
     
+    //MARK: - Exposed Methods
     func setupNavBar(title: String? = nil) {
         guard let nav = navigationController,
               nav.viewControllers.count > 1 else {
@@ -27,9 +29,7 @@ class ViewController: UIViewController {
     }
     
     func pushTo(_ target: UIViewController) {
-        DispatchQueue.main.async {
-            self.navigationController?.pushViewController(target, animated: true)
-        }
+        self.navigationController?.pushViewController(target, animated: true)
     }
     
     func showErrorAlert(title: String, message: String) {
@@ -39,5 +39,17 @@ class ViewController: UIViewController {
         DispatchQueue.main.async {
             self.present(alert, animated: true)
         }
+    }
+    
+    //MARK: - Protected Methods
+    private func setupView() {
+        navigationController?.interactivePopGestureRecognizer?.delegate = self
+    }
+}
+
+extension ViewController: UIGestureRecognizerDelegate {
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        guard let views = navigationController?.viewControllers, views.count > 1  else { return false }
+        return true
     }
 }

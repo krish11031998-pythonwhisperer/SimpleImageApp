@@ -17,7 +17,7 @@ protocol ImageCacheProtocol {
 class ImageCache {
     private lazy var cache: NSCache<NSURL, UIImage> = {
         let cache: NSCache<NSURL, UIImage> = .init()
-        cache.countLimit = 100
+        cache.totalCostLimit = 200_000_000
         return cache
     }()
     
