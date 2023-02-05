@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="SimpleImageApp" customModuleProvider="target">
+            <connections>
+                <outlet property="emailTextField" destination="n5R-UY-Xv5" id="O1X-E4-MIm"/>
+                <outlet property="loginButton" destination="Csn-0c-eqj" id="bUW-iQ-VY1"/>
+                <outlet property="passwordTextField" destination="fG4-wn-SpU" id="ZCm-jW-atw"/>
+                <outlet property="registerButton" destination="vvD-ut-Vw5" id="xaY-QA-LBO"/>
+                <outlet property="stack" destination="Jhs-oX-Yo0" id="pGd-ZO-njT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Jhs-oX-Yo0">
+                    <rect key="frame" x="16" y="75" width="357" height="743"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n5R-UY-Xv5" customClass="TextFieldView" customModule="SimpleImageApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="357" height="558"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fG4-wn-SpU" customClass="TextFieldView" customModule="SimpleImageApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="570" width="357" height="60"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Csn-0c-eqj" customClass="CustomButton" customModule="SimpleImageApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="642" width="357" height="54.666666666666629"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvD-ut-Vw5" customClass="CustomButton" customModule="SimpleImageApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="708.66666666666663" width="357" height="34.333333333333371"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Jhs-oX-Yo0" secondAttribute="trailing" constant="20" id="04q-Ga-DiT"/>
+                <constraint firstItem="Jhs-oX-Yo0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="6NY-xb-QaM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Jhs-oX-Yo0" secondAttribute="bottom" id="7Cj-2P-KTF"/>
+                <constraint firstItem="Jhs-oX-Yo0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="l6t-he-AwO"/>
+            </constraints>
+            <point key="canvasLocation" x="124" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

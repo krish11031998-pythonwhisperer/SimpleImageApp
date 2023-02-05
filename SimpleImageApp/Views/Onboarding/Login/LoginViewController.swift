@@ -1,21 +1,22 @@
 //
-//  LoginViewModel.swift
-//  VuzAssessment
+//  NewLoginViewController.swift
+//  SimpleImageApp
 //
-//  Created by Krishna Venkatramani on 04/02/2023.
+//  Created by Krishna Venkatramani on 05/02/2023.
 //
 
-import Foundation
 import UIKit
 import RxSwift
 import RxCocoa
 
 class LoginViewController: ViewController {
- 
-    private lazy var emailTextField: TextFieldView = { .init(type: .email()) }()
-    private lazy var passwordTextField: TextFieldView = { .init(type: .password()) }()
-    private lazy var loginButton: CustomButton = { .init() }()
-    private lazy var registerButton: CustomButton = { .init() }()
+
+    @IBOutlet weak var emailTextField: TextFieldView!
+    @IBOutlet weak var passwordTextField: TextFieldView!
+    @IBOutlet weak var loginButton: CustomButton!
+    @IBOutlet weak var registerButton: CustomButton!
+    @IBOutlet weak var stack: UIStackView!
+    
     private let viewModel: LoginViewModel
     private var bag: DisposeBag = .init()
     
@@ -25,33 +26,25 @@ class LoginViewController: ViewController {
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        self.viewModel = .init()
+        super.init(coder: coder)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
         bind()
+        setupView()
         setupNavBar(title: "Login")
     }
     
     private func setupView() {
-        let stack = UIStackView()
-        stack.axis = .vertical
-        stack.spacing = 12
-        
-        
-        [emailTextField, passwordTextField, loginButton, registerButton, .spacer()].forEach(stack.addArrangedSubview(_:))
-        
-        view.addSubview(stack)
-        view.setFittingContraints(childView: stack, insets: .init(vertical: 100, horizontal: 16))
-        view.backgroundColor = .surfaceBackground
+        stack.addArrangedSubview(.spacer())
         stack.setCustomSpacing(24, after: passwordTextField)
+        passwordTextField.configureType(type: .password())
         loginButton.setTitle("Login Into the App", for: .normal)
         loginButton.isEnabled = false
         
         registerButton.setTitle("Register", for: .normal)
-    
     }
     
     private func bind() {

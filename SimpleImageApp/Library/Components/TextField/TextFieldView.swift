@@ -66,6 +66,11 @@ class TextFieldView: UIView {
     func sendErrorMessage(message: String?) {
         infoLabel.text = message
     }
+    
+    func configureType(type: TextFieldType) {
+        textFeild.configure(with: type)
+        titleLabel.text = type.placeHolder
+    }
 }
 
 extension Reactive where Base == TextFieldView {
