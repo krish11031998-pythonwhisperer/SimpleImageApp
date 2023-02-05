@@ -1,0 +1,6 @@
+framework module Pods_SimpleImageAppTests {
+  umbrella header "Pods-SimpleImageAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

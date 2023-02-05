@@ -1,0 +1,1212 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D41DAA3F3693219A605227C /* Pods_SimpleImageAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999B8B55A04AD50BD8ADDB98 /* Pods_SimpleImageAppTests.framework */; };
+		9D2D6489EE039EFE8E57A160 /* Pods_SimpleImageApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0F52BBF81E3F4716FCC523 /* Pods_SimpleImageApp.framework */; };
+		B12BE97AF32D05D92AF87454 /* Pods_SimpleImageApp_SimpleImageAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2919EFE5B9773E2A983F47CD /* Pods_SimpleImageApp_SimpleImageAppUITests.framework */; };
+		EFF4471D298FB74200458A4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4471C298FB74200458A4C /* AppDelegate.swift */; };
+		EFF4471F298FB74200458A4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4471E298FB74200458A4C /* SceneDelegate.swift */; };
+		EFF44726298FB74300458A4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFF44725298FB74300458A4C /* Assets.xcassets */; };
+		EFF44729298FB74300458A4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFF44727298FB74300458A4C /* LaunchScreen.storyboard */; };
+		EFF44734298FB74300458A4C /* SimpleImageAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44733298FB74300458A4C /* SimpleImageAppTests.swift */; };
+		EFF4473E298FB74300458A4C /* SimpleImageAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4473D298FB74300458A4C /* SimpleImageAppUITests.swift */; };
+		EFF44740298FB74300458A4C /* SimpleImageAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4473F298FB74300458A4C /* SimpleImageAppUITestsLaunchTests.swift */; };
+		EFF447A2298FB79D00458A4C /* UIImageView+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4474F298FB79D00458A4C /* UIImageView+UIImage.swift */; };
+		EFF447A3298FB79D00458A4C /* UIImage+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44750298FB79D00458A4C /* UIImage+URL.swift */; };
+		EFF447A4298FB79D00458A4C /* UIImage+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44751298FB79D00458A4C /* UIImage+Cache.swift */; };
+		EFF447A5298FB79D00458A4C /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44753298FB79D00458A4C /* URLRequest.swift */; };
+		EFF447A6298FB79D00458A4C /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44754298FB79D00458A4C /* Endpoint.swift */; };
+		EFF447A7298FB79D00458A4C /* ViewHeirachy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44756298FB79D00458A4C /* ViewHeirachy.swift */; };
+		EFF447A8298FB79D00458A4C /* ViewHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44757298FB79D00458A4C /* ViewHelpers.swift */; };
+		EFF447A9298FB79D00458A4C /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44758298FB79D00458A4C /* UIImageView.swift */; };
+		EFF447AA298FB79D00458A4C /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4475A298FB79D00458A4C /* String+Regex.swift */; };
+		EFF447AB298FB79D00458A4C /* TableCellProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4475C298FB79D00458A4C /* TableCellProvider.swift */; };
+		EFF447AC298FB79D00458A4C /* TableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4475D298FB79D00458A4C /* TableSection.swift */; };
+		EFF447AD298FB79D00458A4C /* TableView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4475E298FB79D00458A4C /* TableView+Rx.swift */; };
+		EFF447AE298FB79D00458A4C /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4475F298FB79D00458A4C /* TableViewExtension.swift */; };
+		EFF447AF298FB79D00458A4C /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44761298FB79D00458A4C /* CGFloat.swift */; };
+		EFF447B0298FB79D00458A4C /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44762298FB79D00458A4C /* CGRect.swift */; };
+		EFF447B1298FB79D00458A4C /* Insets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44763298FB79D00458A4C /* Insets.swift */; };
+		EFF447B2298FB79D00458A4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44765298FB79D00458A4C /* ViewController.swift */; };
+		EFF447B3298FB79D00458A4C /* ViewController+NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44766298FB79D00458A4C /* ViewController+NavBar.swift */; };
+		EFF447B4298FB79D00458A4C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44767298FB79D00458A4C /* ViewModel.swift */; };
+		EFF447B5298FB79D00458A4C /* ActionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44768298FB79D00458A4C /* ActionProvider.swift */; };
+		EFF447B6298FB79D00458A4C /* LargeImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4476B298FB79D00458A4C /* LargeImageCell.swift */; };
+		EFF447B7298FB79D00458A4C /* LargeImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFF4476C298FB79D00458A4C /* LargeImageCell.xib */; };
+		EFF447B8298FB79D00458A4C /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFF4476E298FB79D00458A4C /* ImageCell.xib */; };
+		EFF447B9298FB79D00458A4C /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4476F298FB79D00458A4C /* ImageCell.swift */; };
+		EFF447BA298FB79D00458A4C /* TextFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44771298FB79D00458A4C /* TextFieldType.swift */; };
+		EFF447BB298FB79D00458A4C /* TextFieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44772298FB79D00458A4C /* TextFieldValidator.swift */; };
+		EFF447BC298FB79D00458A4C /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44773298FB79D00458A4C /* TextFieldView.swift */; };
+		EFF447BD298FB79D00458A4C /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44774298FB79D00458A4C /* TextField.swift */; };
+		EFF447BE298FB79D00458A4C /* TextFieldInfoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44775298FB79D00458A4C /* TextFieldInfoLabel.swift */; };
+		EFF447BF298FB79D00458A4C /* TextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFF44776298FB79D00458A4C /* TextFieldView.xib */; };
+		EFF447C0298FB79D00458A4C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44778298FB79D00458A4C /* CustomButton.swift */; };
+		EFF447C1298FB79D00458A4C /* InfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFF4477A298FB79D00458A4C /* InfoCell.xib */; };
+		EFF447C2298FB79D00458A4C /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4477B298FB79D00458A4C /* InfoCell.swift */; };
+		EFF447C3298FB79D00458A4C /* ImageCatalogue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4477D298FB79D00458A4C /* ImageCatalogue.swift */; };
+		EFF447C4298FB79D00458A4C /* PixabayImageResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4477F298FB79D00458A4C /* PixabayImageResult.swift */; };
+		EFF447C5298FB79D00458A4C /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44781298FB79D00458A4C /* RegisterModel.swift */; };
+		EFF447C6298FB79D00458A4C /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44783298FB79D00458A4C /* LoginModel.swift */; };
+		EFF447C7298FB79D00458A4C /* ImageServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44786298FB79D00458A4C /* ImageServiceInterface.swift */; };
+		EFF447C8298FB79D00458A4C /* PixabayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44787298FB79D00458A4C /* PixabayService.swift */; };
+		EFF447C9298FB79D00458A4C /* PixabayEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44788298FB79D00458A4C /* PixabayEndpoints.swift */; };
+		EFF447CA298FB79D00458A4C /* RegisterServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4478B298FB79D00458A4C /* RegisterServiceInterface.swift */; };
+		EFF447CB298FB79D00458A4C /* RegisterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4478C298FB79D00458A4C /* RegisterService.swift */; };
+		EFF447CC298FB79D00458A4C /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4478E298FB79D00458A4C /* LoginService.swift */; };
+		EFF447CD298FB79D00458A4C /* LoginServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4478F298FB79D00458A4C /* LoginServiceInterface.swift */; };
+		EFF447CE298FB79D00458A4C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44792298FB79D00458A4C /* HomeViewModel.swift */; };
+		EFF447CF298FB79D00458A4C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44793298FB79D00458A4C /* HomeViewController.swift */; };
+		EFF447D0298FB79D00458A4C /* ImageDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44795298FB79D00458A4C /* ImageDetailViewModel.swift */; };
+		EFF447D1298FB79D00458A4C /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44796298FB79D00458A4C /* ImageDetailViewController.swift */; };
+		EFF447D2298FB79D00458A4C /* OnboardingViewModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44799298FB79D00458A4C /* OnboardingViewModelInterface.swift */; };
+		EFF447D3298FB79D00458A4C /* OnboardingVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4479A298FB79D00458A4C /* OnboardingVIewController.swift */; };
+		EFF447D4298FB79D00458A4C /* OnboardingNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4479B298FB79D00458A4C /* OnboardingNavigation.swift */; };
+		EFF447D5298FB79D00458A4C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4479D298FB79D00458A4C /* RegisterViewController.swift */; };
+		EFF447D6298FB79D00458A4C /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4479E298FB79D00458A4C /* RegisterViewModel.swift */; };
+		EFF447D7298FB79D00458A4C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF447A0298FB79D00458A4C /* LoginViewModel.swift */; };
+		EFF447D8298FB79D00458A4C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF447A1298FB79D00458A4C /* LoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFF44730298FB74300458A4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFF44711298FB74200458A4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFF44718298FB74200458A4C;
+			remoteInfo = SimpleImageApp;
+		};
+		EFF4473A298FB74300458A4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFF44711298FB74200458A4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFF44718298FB74200458A4C;
+			remoteInfo = SimpleImageApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0864A9D2F4B84B50155F99F9 /* Pods-SimpleImageAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleImageAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleImageAppTests/Pods-SimpleImageAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2919EFE5B9773E2A983F47CD /* Pods_SimpleImageApp_SimpleImageAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleImageApp_SimpleImageAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		295B53D1A4AA3EBB80689796 /* Pods-SimpleImageApp-SimpleImageAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleImageApp-SimpleImageAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleImageApp-SimpleImageAppUITests/Pods-SimpleImageApp-SimpleImageAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		663F6B057CA83203DF813280 /* Pods-SimpleImageApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleImageApp.release.xcconfig"; path = "Target Support Files/Pods-SimpleImageApp/Pods-SimpleImageApp.release.xcconfig"; sourceTree = "<group>"; };
+		6A0F52BBF81E3F4716FCC523 /* Pods_SimpleImageApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleImageApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		999B8B55A04AD50BD8ADDB98 /* Pods_SimpleImageAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleImageAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2CE9DB7F39A26FC6D6BB6F5 /* Pods-SimpleImageAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleImageAppTests.release.xcconfig"; path = "Target Support Files/Pods-SimpleImageAppTests/Pods-SimpleImageAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		E7A979BC4CB40C5889593677 /* Pods-SimpleImageApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleImageApp.debug.xcconfig"; path = "Target Support Files/Pods-SimpleImageApp/Pods-SimpleImageApp.debug.xcconfig"; sourceTree = "<group>"; };
+		EFF44719298FB74200458A4C /* SimpleImageApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleImageApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFF4471C298FB74200458A4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EFF4471E298FB74200458A4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EFF44725298FB74300458A4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFF44728298FB74300458A4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EFF4472A298FB74300458A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFF4472F298FB74300458A4C /* SimpleImageAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleImageAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFF44733298FB74300458A4C /* SimpleImageAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleImageAppTests.swift; sourceTree = "<group>"; };
+		EFF44739298FB74300458A4C /* SimpleImageAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleImageAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFF4473D298FB74300458A4C /* SimpleImageAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleImageAppUITests.swift; sourceTree = "<group>"; };
+		EFF4473F298FB74300458A4C /* SimpleImageAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleImageAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EFF4474F298FB79D00458A4C /* UIImageView+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+UIImage.swift"; sourceTree = "<group>"; };
+		EFF44750298FB79D00458A4C /* UIImage+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+URL.swift"; sourceTree = "<group>"; };
+		EFF44751298FB79D00458A4C /* UIImage+Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Cache.swift"; sourceTree = "<group>"; };
+		EFF44753298FB79D00458A4C /* URLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
+		EFF44754298FB79D00458A4C /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		EFF44756298FB79D00458A4C /* ViewHeirachy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewHeirachy.swift; sourceTree = "<group>"; };
+		EFF44757298FB79D00458A4C /* ViewHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewHelpers.swift; sourceTree = "<group>"; };
+		EFF44758298FB79D00458A4C /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		EFF4475A298FB79D00458A4C /* String+Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Regex.swift"; sourceTree = "<group>"; };
+		EFF4475C298FB79D00458A4C /* TableCellProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCellProvider.swift; sourceTree = "<group>"; };
+		EFF4475D298FB79D00458A4C /* TableSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSection.swift; sourceTree = "<group>"; };
+		EFF4475E298FB79D00458A4C /* TableView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableView+Rx.swift"; sourceTree = "<group>"; };
+		EFF4475F298FB79D00458A4C /* TableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewExtension.swift; sourceTree = "<group>"; };
+		EFF44761298FB79D00458A4C /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		EFF44762298FB79D00458A4C /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
+		EFF44763298FB79D00458A4C /* Insets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Insets.swift; sourceTree = "<group>"; };
+		EFF44765298FB79D00458A4C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EFF44766298FB79D00458A4C /* ViewController+NavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+NavBar.swift"; sourceTree = "<group>"; };
+		EFF44767298FB79D00458A4C /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		EFF44768298FB79D00458A4C /* ActionProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionProvider.swift; sourceTree = "<group>"; };
+		EFF4476B298FB79D00458A4C /* LargeImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeImageCell.swift; sourceTree = "<group>"; };
+		EFF4476C298FB79D00458A4C /* LargeImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LargeImageCell.xib; sourceTree = "<group>"; };
+		EFF4476E298FB79D00458A4C /* ImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
+		EFF4476F298FB79D00458A4C /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		EFF44771298FB79D00458A4C /* TextFieldType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldType.swift; sourceTree = "<group>"; };
+		EFF44772298FB79D00458A4C /* TextFieldValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldValidator.swift; sourceTree = "<group>"; };
+		EFF44773298FB79D00458A4C /* TextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		EFF44774298FB79D00458A4C /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		EFF44775298FB79D00458A4C /* TextFieldInfoLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldInfoLabel.swift; sourceTree = "<group>"; };
+		EFF44776298FB79D00458A4C /* TextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldView.xib; sourceTree = "<group>"; };
+		EFF44778298FB79D00458A4C /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		EFF4477A298FB79D00458A4C /* InfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoCell.xib; sourceTree = "<group>"; };
+		EFF4477B298FB79D00458A4C /* InfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
+		EFF4477D298FB79D00458A4C /* ImageCatalogue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCatalogue.swift; sourceTree = "<group>"; };
+		EFF4477F298FB79D00458A4C /* PixabayImageResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixabayImageResult.swift; sourceTree = "<group>"; };
+		EFF44781298FB79D00458A4C /* RegisterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		EFF44783298FB79D00458A4C /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		EFF44786298FB79D00458A4C /* ImageServiceInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageServiceInterface.swift; sourceTree = "<group>"; };
+		EFF44787298FB79D00458A4C /* PixabayService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixabayService.swift; sourceTree = "<group>"; };
+		EFF44788298FB79D00458A4C /* PixabayEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixabayEndpoints.swift; sourceTree = "<group>"; };
+		EFF4478B298FB79D00458A4C /* RegisterServiceInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterServiceInterface.swift; sourceTree = "<group>"; };
+		EFF4478C298FB79D00458A4C /* RegisterService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterService.swift; sourceTree = "<group>"; };
+		EFF4478E298FB79D00458A4C /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		EFF4478F298FB79D00458A4C /* LoginServiceInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginServiceInterface.swift; sourceTree = "<group>"; };
+		EFF44792298FB79D00458A4C /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		EFF44793298FB79D00458A4C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EFF44795298FB79D00458A4C /* ImageDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDetailViewModel.swift; sourceTree = "<group>"; };
+		EFF44796298FB79D00458A4C /* ImageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
+		EFF44799298FB79D00458A4C /* OnboardingViewModelInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewModelInterface.swift; sourceTree = "<group>"; };
+		EFF4479A298FB79D00458A4C /* OnboardingVIewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingVIewController.swift; sourceTree = "<group>"; };
+		EFF4479B298FB79D00458A4C /* OnboardingNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingNavigation.swift; sourceTree = "<group>"; };
+		EFF4479D298FB79D00458A4C /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		EFF4479E298FB79D00458A4C /* RegisterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		EFF447A0298FB79D00458A4C /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		EFF447A1298FB79D00458A4C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FB4D53978D656605C62D3F9A /* Pods-SimpleImageApp-SimpleImageAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleImageApp-SimpleImageAppUITests.release.xcconfig"; path = "Target Support Files/Pods-SimpleImageApp-SimpleImageAppUITests/Pods-SimpleImageApp-SimpleImageAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFF44716298FB74200458A4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D2D6489EE039EFE8E57A160 /* Pods_SimpleImageApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFF4472C298FB74300458A4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D41DAA3F3693219A605227C /* Pods_SimpleImageAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFF44736298FB74300458A4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12BE97AF32D05D92AF87454 /* Pods_SimpleImageApp_SimpleImageAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		935140E1F4163ADE6A236265 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A0F52BBF81E3F4716FCC523 /* Pods_SimpleImageApp.framework */,
+				2919EFE5B9773E2A983F47CD /* Pods_SimpleImageApp_SimpleImageAppUITests.framework */,
+				999B8B55A04AD50BD8ADDB98 /* Pods_SimpleImageAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95961D2427E280CDB065D947 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7A979BC4CB40C5889593677 /* Pods-SimpleImageApp.debug.xcconfig */,
+				663F6B057CA83203DF813280 /* Pods-SimpleImageApp.release.xcconfig */,
+				295B53D1A4AA3EBB80689796 /* Pods-SimpleImageApp-SimpleImageAppUITests.debug.xcconfig */,
+				FB4D53978D656605C62D3F9A /* Pods-SimpleImageApp-SimpleImageAppUITests.release.xcconfig */,
+				0864A9D2F4B84B50155F99F9 /* Pods-SimpleImageAppTests.debug.xcconfig */,
+				B2CE9DB7F39A26FC6D6BB6F5 /* Pods-SimpleImageAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EFF44710298FB74200458A4C = {
+			isa = PBXGroup;
+			children = (
+				EFF4471B298FB74200458A4C /* SimpleImageApp */,
+				EFF44732298FB74300458A4C /* SimpleImageAppTests */,
+				EFF4473C298FB74300458A4C /* SimpleImageAppUITests */,
+				EFF4471A298FB74200458A4C /* Products */,
+				95961D2427E280CDB065D947 /* Pods */,
+				935140E1F4163ADE6A236265 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EFF4471A298FB74200458A4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFF44719298FB74200458A4C /* SimpleImageApp.app */,
+				EFF4472F298FB74300458A4C /* SimpleImageAppTests.xctest */,
+				EFF44739298FB74300458A4C /* SimpleImageAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFF4471B298FB74200458A4C /* SimpleImageApp */ = {
+			isa = PBXGroup;
+			children = (
+				EFF4474C298FB79D00458A4C /* Library */,
+				EFF4477E298FB79D00458A4C /* Model */,
+				EFF44784298FB79D00458A4C /* Service */,
+				EFF44790298FB79D00458A4C /* Views */,
+				EFF4471C298FB74200458A4C /* AppDelegate.swift */,
+				EFF4471E298FB74200458A4C /* SceneDelegate.swift */,
+				EFF44725298FB74300458A4C /* Assets.xcassets */,
+				EFF44727298FB74300458A4C /* LaunchScreen.storyboard */,
+				EFF4472A298FB74300458A4C /* Info.plist */,
+			);
+			path = SimpleImageApp;
+			sourceTree = "<group>";
+		};
+		EFF44732298FB74300458A4C /* SimpleImageAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFF44733298FB74300458A4C /* SimpleImageAppTests.swift */,
+			);
+			path = SimpleImageAppTests;
+			sourceTree = "<group>";
+		};
+		EFF4473C298FB74300458A4C /* SimpleImageAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EFF4473D298FB74300458A4C /* SimpleImageAppUITests.swift */,
+				EFF4473F298FB74300458A4C /* SimpleImageAppUITestsLaunchTests.swift */,
+			);
+			path = SimpleImageAppUITests;
+			sourceTree = "<group>";
+		};
+		EFF4474C298FB79D00458A4C /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				EFF4474D298FB79D00458A4C /* Extension */,
+				EFF44769298FB79D00458A4C /* Components */,
+				EFF4477C298FB79D00458A4C /* Catalogue */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		EFF4474D298FB79D00458A4C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EFF4474E298FB79D00458A4C /* UIImage */,
+				EFF44752298FB79D00458A4C /* Network */,
+				EFF44755298FB79D00458A4C /* View */,
+				EFF44759298FB79D00458A4C /* String */,
+				EFF4475B298FB79D00458A4C /* TableExtension */,
+				EFF44760298FB79D00458A4C /* Dimensions */,
+				EFF44764298FB79D00458A4C /* ViewController */,
+				EFF44768298FB79D00458A4C /* ActionProvider.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EFF4474E298FB79D00458A4C /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				EFF4474F298FB79D00458A4C /* UIImageView+UIImage.swift */,
+				EFF44750298FB79D00458A4C /* UIImage+URL.swift */,
+				EFF44751298FB79D00458A4C /* UIImage+Cache.swift */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		EFF44752298FB79D00458A4C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EFF44753298FB79D00458A4C /* URLRequest.swift */,
+				EFF44754298FB79D00458A4C /* Endpoint.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EFF44755298FB79D00458A4C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFF44756298FB79D00458A4C /* ViewHeirachy.swift */,
+				EFF44757298FB79D00458A4C /* ViewHelpers.swift */,
+				EFF44758298FB79D00458A4C /* UIImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EFF44759298FB79D00458A4C /* String */ = {
+			isa = PBXGroup;
+			children = (
+				EFF4475A298FB79D00458A4C /* String+Regex.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		EFF4475B298FB79D00458A4C /* TableExtension */ = {
+			isa = PBXGroup;
+			children = (
+				EFF4475C298FB79D00458A4C /* TableCellProvider.swift */,
+				EFF4475D298FB79D00458A4C /* TableSection.swift */,
+				EFF4475E298FB79D00458A4C /* TableView+Rx.swift */,
+				EFF4475F298FB79D00458A4C /* TableViewExtension.swift */,
+			);
+			path = TableExtension;
+			sourceTree = "<group>";
+		};
+		EFF44760298FB79D00458A4C /* Dimensions */ = {
+			isa = PBXGroup;
+			children = (
+				EFF44761298FB79D00458A4C /* CGFloat.swift */,
+				EFF44762298FB79D00458A4C /* CGRect.swift */,
+				EFF44763298FB79D00458A4C /* Insets.swift */,
+			);
+			path = Dimensions;
+			sourceTree = "<group>";
+		};
+		EFF44764298FB79D00458A4C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EFF44765298FB79D00458A4C /* ViewController.swift */,
+				EFF44766298FB79D00458A4C /* ViewController+NavBar.swift */,
+				EFF44767298FB79D00458A4C /* ViewModel.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		EFF44769298FB79D00458A4C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EFF4476A298FB79D00458A4C /* LargeImageCell */,
+				EFF4476D298FB79D00458A4C /* ImageCell */,
+				EFF44770298FB79D00458A4C /* TextField */,
+				EFF44777298FB79D00458A4C /* Button */,
+				EFF44779298FB79D00458A4C /* InfoCell */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		EFF4476A298FB79D00458A4C /* LargeImageCell */ = {
+			isa = PBXGroup;
+			children = (
+				EFF4476B298FB79D00458A4C /* LargeImageCell.swift */,
+				EFF4476C298FB79D00458A4C /* LargeImageCell.xib */,
+			);
+			path = LargeImageCell;
+			sourceTree = "<group>";
+		};
+		EFF4476D298FB79D00458A4C /* ImageCell */ = {
+			isa = PBXGroup;
+			children = (
+				EFF4476E298FB79D00458A4C /* ImageCell.xib */,
+				EFF4476F298FB79D00458A4C /* ImageCell.swift */,
+			);
+			path = ImageCell;
+			sourceTree = "<group>";
+		};
+		EFF44770298FB79D00458A4C /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				EFF44771298FB79D00458A4C /* TextFieldType.swift */,
+				EFF44772298FB79D00458A4C /* TextFieldValidator.swift */,
+				EFF44773298FB79D00458A4C /* TextFieldView.swift */,
+				EFF44774298FB79D00458A4C /* TextField.swift */,
+				EFF44775298FB79D00458A4C /* TextFieldInfoLabel.swift */,
+				EFF44776298FB79D00458A4C /* TextFieldView.xib */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		EFF44777298FB79D00458A4C /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				EFF44778298FB79D00458A4C /* CustomButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		EFF44779298FB79D00458A4C /* InfoCell */ = {
+			isa = PBXGroup;
+			children = (
+				EFF4477A298FB79D00458A4C /* InfoCell.xib */,
+				EFF4477B298FB79D00458A4C /* InfoCell.swift */,
+			);
+			path = InfoCell;
+			sourceTree = "<group>";
+		};
+		EFF4477C298FB79D00458A4C /* Catalogue */ = {
+			isa = PBXGroup;
+			children = (
+				EFF4477D298FB79D00458A4C /* ImageCatalogue.swift */,
+			);
+			path = Catalogue;
+			sourceTree = "<group>";
+		};
+		EFF4477E298FB79D00458A4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFF4477F298FB79D00458A4C /* PixabayImageResult.swift */,
+				EFF44780298FB79D00458A4C /* RegisterModel */,
+				EFF44782298FB79D00458A4C /* LoginModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFF44780298FB79D00458A4C /* RegisterModel */ = {
+			isa = PBXGroup;
+			children = (
+				EFF44781298FB79D00458A4C /* RegisterModel.swift */,
+			);
+			path = RegisterModel;
+			sourceTree = "<group>";
+		};
+		EFF44782298FB79D00458A4C /* LoginModel */ = {
+			isa = PBXGroup;
+			children = (
+				EFF44783298FB79D00458A4C /* LoginModel.swift */,
+			);
+			path = LoginModel;
+			sourceTree = "<group>";
+		};
+		EFF44784298FB79D00458A4C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EFF44785298FB79D00458A4C /* Pixabay */,
+				EFF44789298FB79D00458A4C /* Onboarding */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EFF44785298FB79D00458A4C /* Pixabay */ = {
+			isa = PBXGroup;
+			children = (
+				EFF44786298FB79D00458A4C /* ImageServiceInterface.swift */,
+				EFF44787298FB79D00458A4C /* PixabayService.swift */,
+				EFF44788298FB79D00458A4C /* PixabayEndpoints.swift */,
+			);
+			path = Pixabay;
+			sourceTree = "<group>";
+		};
+		EFF44789298FB79D00458A4C /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EFF4478A298FB79D00458A4C /* Register */,
+				EFF4478D298FB79D00458A4C /* Login */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		EFF4478A298FB79D00458A4C /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				EFF4478B298FB79D00458A4C /* RegisterServiceInterface.swift */,
+				EFF4478C298FB79D00458A4C /* RegisterService.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		EFF4478D298FB79D00458A4C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EFF4478E298FB79D00458A4C /* LoginService.swift */,
+				EFF4478F298FB79D00458A4C /* LoginServiceInterface.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EFF44790298FB79D00458A4C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EFF44791298FB79D00458A4C /* Home */,
+				EFF44794298FB79D00458A4C /* ImageDetail */,
+				EFF44797298FB79D00458A4C /* Onboarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EFF44791298FB79D00458A4C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EFF44792298FB79D00458A4C /* HomeViewModel.swift */,
+				EFF44793298FB79D00458A4C /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EFF44794298FB79D00458A4C /* ImageDetail */ = {
+			isa = PBXGroup;
+			children = (
+				EFF44795298FB79D00458A4C /* ImageDetailViewModel.swift */,
+				EFF44796298FB79D00458A4C /* ImageDetailViewController.swift */,
+			);
+			path = ImageDetail;
+			sourceTree = "<group>";
+		};
+		EFF44797298FB79D00458A4C /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EFF44798298FB79D00458A4C /* Form */,
+				EFF4479B298FB79D00458A4C /* OnboardingNavigation.swift */,
+				EFF4479C298FB79D00458A4C /* Register */,
+				EFF4479F298FB79D00458A4C /* Login */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		EFF44798298FB79D00458A4C /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				EFF44799298FB79D00458A4C /* OnboardingViewModelInterface.swift */,
+				EFF4479A298FB79D00458A4C /* OnboardingVIewController.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		EFF4479C298FB79D00458A4C /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				EFF4479D298FB79D00458A4C /* RegisterViewController.swift */,
+				EFF4479E298FB79D00458A4C /* RegisterViewModel.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		EFF4479F298FB79D00458A4C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EFF447A0298FB79D00458A4C /* LoginViewModel.swift */,
+				EFF447A1298FB79D00458A4C /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFF44718298FB74200458A4C /* SimpleImageApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFF44743298FB74300458A4C /* Build configuration list for PBXNativeTarget "SimpleImageApp" */;
+			buildPhases = (
+				069F5A3044F172667C525867 /* [CP] Check Pods Manifest.lock */,
+				EFF44715298FB74200458A4C /* Sources */,
+				EFF44716298FB74200458A4C /* Frameworks */,
+				EFF44717298FB74200458A4C /* Resources */,
+				DEB3D1E2B5C01106EFF5F561 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleImageApp;
+			productName = SimpleImageApp;
+			productReference = EFF44719298FB74200458A4C /* SimpleImageApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFF4472E298FB74300458A4C /* SimpleImageAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFF44746298FB74300458A4C /* Build configuration list for PBXNativeTarget "SimpleImageAppTests" */;
+			buildPhases = (
+				35374608B90852EAEE895748 /* [CP] Check Pods Manifest.lock */,
+				EFF4472B298FB74300458A4C /* Sources */,
+				EFF4472C298FB74300458A4C /* Frameworks */,
+				EFF4472D298FB74300458A4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFF44731298FB74300458A4C /* PBXTargetDependency */,
+			);
+			name = SimpleImageAppTests;
+			productName = SimpleImageAppTests;
+			productReference = EFF4472F298FB74300458A4C /* SimpleImageAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EFF44738298FB74300458A4C /* SimpleImageAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFF44749298FB74300458A4C /* Build configuration list for PBXNativeTarget "SimpleImageAppUITests" */;
+			buildPhases = (
+				9C4AD037C81787653D16F9E5 /* [CP] Check Pods Manifest.lock */,
+				EFF44735298FB74300458A4C /* Sources */,
+				EFF44736298FB74300458A4C /* Frameworks */,
+				EFF44737298FB74300458A4C /* Resources */,
+				3837AB9DA8CAF9A08E763304 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFF4473B298FB74300458A4C /* PBXTargetDependency */,
+			);
+			name = SimpleImageAppUITests;
+			productName = SimpleImageAppUITests;
+			productReference = EFF44739298FB74300458A4C /* SimpleImageAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFF44711298FB74200458A4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					EFF44718298FB74200458A4C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					EFF4472E298FB74300458A4C = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = EFF44718298FB74200458A4C;
+					};
+					EFF44738298FB74300458A4C = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = EFF44718298FB74200458A4C;
+					};
+				};
+			};
+			buildConfigurationList = EFF44714298FB74200458A4C /* Build configuration list for PBXProject "SimpleImageApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFF44710298FB74200458A4C;
+			productRefGroup = EFF4471A298FB74200458A4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFF44718298FB74200458A4C /* SimpleImageApp */,
+				EFF4472E298FB74300458A4C /* SimpleImageAppTests */,
+				EFF44738298FB74300458A4C /* SimpleImageAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFF44717298FB74200458A4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFF447BF298FB79D00458A4C /* TextFieldView.xib in Resources */,
+				EFF447C1298FB79D00458A4C /* InfoCell.xib in Resources */,
+				EFF44729298FB74300458A4C /* LaunchScreen.storyboard in Resources */,
+				EFF447B7298FB79D00458A4C /* LargeImageCell.xib in Resources */,
+				EFF44726298FB74300458A4C /* Assets.xcassets in Resources */,
+				EFF447B8298FB79D00458A4C /* ImageCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFF4472D298FB74300458A4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFF44737298FB74300458A4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		069F5A3044F172667C525867 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleImageApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35374608B90852EAEE895748 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleImageAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3837AB9DA8CAF9A08E763304 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleImageApp-SimpleImageAppUITests/Pods-SimpleImageApp-SimpleImageAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleImageApp-SimpleImageAppUITests/Pods-SimpleImageApp-SimpleImageAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleImageApp-SimpleImageAppUITests/Pods-SimpleImageApp-SimpleImageAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C4AD037C81787653D16F9E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleImageApp-SimpleImageAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEB3D1E2B5C01106EFF5F561 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleImageApp/Pods-SimpleImageApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleImageApp/Pods-SimpleImageApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleImageApp/Pods-SimpleImageApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFF44715298FB74200458A4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFF447D8298FB79D00458A4C /* LoginViewController.swift in Sources */,
+				EFF447AC298FB79D00458A4C /* TableSection.swift in Sources */,
+				EFF447C5298FB79D00458A4C /* RegisterModel.swift in Sources */,
+				EFF447AD298FB79D00458A4C /* TableView+Rx.swift in Sources */,
+				EFF447AB298FB79D00458A4C /* TableCellProvider.swift in Sources */,
+				EFF447AE298FB79D00458A4C /* TableViewExtension.swift in Sources */,
+				EFF447CF298FB79D00458A4C /* HomeViewController.swift in Sources */,
+				EFF447BB298FB79D00458A4C /* TextFieldValidator.swift in Sources */,
+				EFF447D7298FB79D00458A4C /* LoginViewModel.swift in Sources */,
+				EFF447A2298FB79D00458A4C /* UIImageView+UIImage.swift in Sources */,
+				EFF447B6298FB79D00458A4C /* LargeImageCell.swift in Sources */,
+				EFF447D1298FB79D00458A4C /* ImageDetailViewController.swift in Sources */,
+				EFF447CA298FB79D00458A4C /* RegisterServiceInterface.swift in Sources */,
+				EFF447C4298FB79D00458A4C /* PixabayImageResult.swift in Sources */,
+				EFF447D4298FB79D00458A4C /* OnboardingNavigation.swift in Sources */,
+				EFF447D3298FB79D00458A4C /* OnboardingVIewController.swift in Sources */,
+				EFF447B3298FB79D00458A4C /* ViewController+NavBar.swift in Sources */,
+				EFF447B5298FB79D00458A4C /* ActionProvider.swift in Sources */,
+				EFF447A5298FB79D00458A4C /* URLRequest.swift in Sources */,
+				EFF447CC298FB79D00458A4C /* LoginService.swift in Sources */,
+				EFF447D0298FB79D00458A4C /* ImageDetailViewModel.swift in Sources */,
+				EFF447B9298FB79D00458A4C /* ImageCell.swift in Sources */,
+				EFF447C6298FB79D00458A4C /* LoginModel.swift in Sources */,
+				EFF447AA298FB79D00458A4C /* String+Regex.swift in Sources */,
+				EFF447B0298FB79D00458A4C /* CGRect.swift in Sources */,
+				EFF447A6298FB79D00458A4C /* Endpoint.swift in Sources */,
+				EFF447B2298FB79D00458A4C /* ViewController.swift in Sources */,
+				EFF447C3298FB79D00458A4C /* ImageCatalogue.swift in Sources */,
+				EFF447C7298FB79D00458A4C /* ImageServiceInterface.swift in Sources */,
+				EFF447CE298FB79D00458A4C /* HomeViewModel.swift in Sources */,
+				EFF447CD298FB79D00458A4C /* LoginServiceInterface.swift in Sources */,
+				EFF447D5298FB79D00458A4C /* RegisterViewController.swift in Sources */,
+				EFF447A4298FB79D00458A4C /* UIImage+Cache.swift in Sources */,
+				EFF447C0298FB79D00458A4C /* CustomButton.swift in Sources */,
+				EFF447A3298FB79D00458A4C /* UIImage+URL.swift in Sources */,
+				EFF447BE298FB79D00458A4C /* TextFieldInfoLabel.swift in Sources */,
+				EFF447BA298FB79D00458A4C /* TextFieldType.swift in Sources */,
+				EFF447D2298FB79D00458A4C /* OnboardingViewModelInterface.swift in Sources */,
+				EFF447C2298FB79D00458A4C /* InfoCell.swift in Sources */,
+				EFF447B4298FB79D00458A4C /* ViewModel.swift in Sources */,
+				EFF447AF298FB79D00458A4C /* CGFloat.swift in Sources */,
+				EFF447A9298FB79D00458A4C /* UIImageView.swift in Sources */,
+				EFF447BD298FB79D00458A4C /* TextField.swift in Sources */,
+				EFF447BC298FB79D00458A4C /* TextFieldView.swift in Sources */,
+				EFF447C8298FB79D00458A4C /* PixabayService.swift in Sources */,
+				EFF447B1298FB79D00458A4C /* Insets.swift in Sources */,
+				EFF4471D298FB74200458A4C /* AppDelegate.swift in Sources */,
+				EFF447A7298FB79D00458A4C /* ViewHeirachy.swift in Sources */,
+				EFF447D6298FB79D00458A4C /* RegisterViewModel.swift in Sources */,
+				EFF447C9298FB79D00458A4C /* PixabayEndpoints.swift in Sources */,
+				EFF447CB298FB79D00458A4C /* RegisterService.swift in Sources */,
+				EFF447A8298FB79D00458A4C /* ViewHelpers.swift in Sources */,
+				EFF4471F298FB74200458A4C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFF4472B298FB74300458A4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFF44734298FB74300458A4C /* SimpleImageAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFF44735298FB74300458A4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFF44740298FB74300458A4C /* SimpleImageAppUITestsLaunchTests.swift in Sources */,
+				EFF4473E298FB74300458A4C /* SimpleImageAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFF44731298FB74300458A4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFF44718298FB74200458A4C /* SimpleImageApp */;
+			targetProxy = EFF44730298FB74300458A4C /* PBXContainerItemProxy */;
+		};
+		EFF4473B298FB74300458A4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFF44718298FB74200458A4C /* SimpleImageApp */;
+			targetProxy = EFF4473A298FB74300458A4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EFF44727298FB74300458A4C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFF44728298FB74300458A4C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFF44741298FB74300458A4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EFF44742298FB74300458A4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFF44744298FB74300458A4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7A979BC4CB40C5889593677 /* Pods-SimpleImageApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8T963ZW2EJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimpleImageApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krishna.SimpleImageApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFF44745298FB74300458A4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 663F6B057CA83203DF813280 /* Pods-SimpleImageApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8T963ZW2EJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimpleImageApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krishna.SimpleImageApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EFF44747298FB74300458A4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0864A9D2F4B84B50155F99F9 /* Pods-SimpleImageAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8T963ZW2EJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krishna.SimpleImageAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleImageApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SimpleImageApp";
+			};
+			name = Debug;
+		};
+		EFF44748298FB74300458A4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2CE9DB7F39A26FC6D6BB6F5 /* Pods-SimpleImageAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8T963ZW2EJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krishna.SimpleImageAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleImageApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SimpleImageApp";
+			};
+			name = Release;
+		};
+		EFF4474A298FB74300458A4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 295B53D1A4AA3EBB80689796 /* Pods-SimpleImageApp-SimpleImageAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8T963ZW2EJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krishna.SimpleImageAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimpleImageApp;
+			};
+			name = Debug;
+		};
+		EFF4474B298FB74300458A4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB4D53978D656605C62D3F9A /* Pods-SimpleImageApp-SimpleImageAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8T963ZW2EJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krishna.SimpleImageAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimpleImageApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFF44714298FB74200458A4C /* Build configuration list for PBXProject "SimpleImageApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFF44741298FB74300458A4C /* Debug */,
+				EFF44742298FB74300458A4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFF44743298FB74300458A4C /* Build configuration list for PBXNativeTarget "SimpleImageApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFF44744298FB74300458A4C /* Debug */,
+				EFF44745298FB74300458A4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFF44746298FB74300458A4C /* Build configuration list for PBXNativeTarget "SimpleImageAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFF44747298FB74300458A4C /* Debug */,
+				EFF44748298FB74300458A4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFF44749298FB74300458A4C /* Build configuration list for PBXNativeTarget "SimpleImageAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFF4474A298FB74300458A4C /* Debug */,
+				EFF4474B298FB74300458A4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFF44711298FB74200458A4C /* Project object */;
+}
