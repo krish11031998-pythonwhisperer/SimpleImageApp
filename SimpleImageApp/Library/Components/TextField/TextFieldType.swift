@@ -44,4 +44,26 @@ extension TextFieldType {
         }
     }
     
+    var rightSideView: UIView? {
+        switch self {
+        case .password:
+            let button = UIButton()
+            button.setImage(SFSymbolCatalogue.eye.image, for: .normal)
+            button.setImage(SFSymbolCatalogue.eyeSlash.image, for: .selected)
+            
+            return button
+        default:
+            return nil
+        }
+    }
+    
+    var rightSideViewMode: UITextField.ViewMode {
+        switch self {
+        case .password:
+            return .always
+        default:
+            return .never
+        }
+    }
+    
 }

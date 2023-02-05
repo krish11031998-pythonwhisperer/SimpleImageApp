@@ -13,6 +13,7 @@ import RxCocoa
 class TextField: UITextField {
     
     private(set) var type: TextFieldType
+    private var bag: DisposeBag = .init()
     
     //MARK: - Overriden Methods
     override func textRect(forBounds bounds: CGRect) -> CGRect {
@@ -23,7 +24,12 @@ class TextField: UITextField {
         bounds.insetBy(dx: 7.5, dy: 10)
     }
     
-    //MARK: - Configure
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        layer.borderColor = UIColor.surfaceBackgroundInverse.cgColor
+    }
+        
+    //MARK: - Constructors
     
     init(type: TextFieldType) {
         self.type = type
@@ -38,6 +44,7 @@ class TextField: UITextField {
     }
     
     
+    //MARK: - Protected Methods
     private func setupTextField() {
         border()
 //        layer.borderColor = UIColor.surfaceBackgroundInverse.cgColor
@@ -52,18 +59,35 @@ class TextField: UITextField {
         isSecureTextEntry = type.secureText
         setFrame(height: 50)
         layer.masksToBounds = true
+        rightView = type.rightSideView
+        rightViewMode = type.rightSideViewMode
+        bind()
     }
 
-    
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        super.traitCollectionDidChange(previousTraitCollection)
-        layer.borderColor = UIColor.surfaceBackgroundInverse.cgColor
+    private func bind() {
+        if let buttonView = rightView as? UIButton {
+            buttonView.rx.controlEvent(.touchUpInside)
+                .subscribe { [weak self] _ in
+                    buttonView.isSelected.toggle()
+                    guard let self else { return }
+                    switch self.type {
+                    case .password:
+                        self.isSecureTextEntry.toggle()
+                    default:
+                        break
+                    }
+                }
+                .disposed(by: bag)
+        }
     }
     
+    //MARK: - Exposed Methods
     func configure(with type: TextFieldType) {
         self.type = type
         self.setupTextField()
     }
+    
+    
     
 }
 

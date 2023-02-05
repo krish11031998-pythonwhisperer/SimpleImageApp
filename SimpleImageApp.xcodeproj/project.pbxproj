@@ -11,6 +11,7 @@
 		9D2D6489EE039EFE8E57A160 /* Pods_SimpleImageApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0F52BBF81E3F4716FCC523 /* Pods_SimpleImageApp.framework */; };
 		B12BE97AF32D05D92AF87454 /* Pods_SimpleImageApp_SimpleImageAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2919EFE5B9773E2A983F47CD /* Pods_SimpleImageApp_SimpleImageAppUITests.framework */; };
 		EF30ECAF29901C0600AD2FA6 /* UITextField+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF30ECAE29901C0600AD2FA6 /* UITextField+Rx.swift */; };
+		EF30ECB129902E2D00AD2FA6 /* SFSymbolCatalogue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF30ECB029902E2D00AD2FA6 /* SFSymbolCatalogue.swift */; };
 		EFE023B7298FBF8400022745 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE023B4298FBF8400022745 /* HomeViewModel.swift */; };
 		EFE023B8298FBF8400022745 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE023B5298FBF8400022745 /* HomeViewController.xib */; };
 		EFE023B9298FBF8400022745 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE023B6298FBF8400022745 /* HomeViewController.swift */; };
@@ -64,7 +65,7 @@
 		EFF447C0298FB79D00458A4C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44778298FB79D00458A4C /* CustomButton.swift */; };
 		EFF447C1298FB79D00458A4C /* InfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFF4477A298FB79D00458A4C /* InfoCell.xib */; };
 		EFF447C2298FB79D00458A4C /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4477B298FB79D00458A4C /* InfoCell.swift */; };
-		EFF447C3298FB79D00458A4C /* ImageCatalogue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4477D298FB79D00458A4C /* ImageCatalogue.swift */; };
+		EFF447C3298FB79D00458A4C /* ColorCatalogue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4477D298FB79D00458A4C /* ColorCatalogue.swift */; };
 		EFF447C4298FB79D00458A4C /* PixabayImageResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4477F298FB79D00458A4C /* PixabayImageResult.swift */; };
 		EFF447C5298FB79D00458A4C /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44781298FB79D00458A4C /* RegisterModel.swift */; };
 		EFF447C6298FB79D00458A4C /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44783298FB79D00458A4C /* LoginModel.swift */; };
@@ -109,6 +110,7 @@
 		B2CE9DB7F39A26FC6D6BB6F5 /* Pods-SimpleImageAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleImageAppTests.release.xcconfig"; path = "Target Support Files/Pods-SimpleImageAppTests/Pods-SimpleImageAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		E7A979BC4CB40C5889593677 /* Pods-SimpleImageApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleImageApp.debug.xcconfig"; path = "Target Support Files/Pods-SimpleImageApp/Pods-SimpleImageApp.debug.xcconfig"; sourceTree = "<group>"; };
 		EF30ECAE29901C0600AD2FA6 /* UITextField+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Rx.swift"; sourceTree = "<group>"; };
+		EF30ECB029902E2D00AD2FA6 /* SFSymbolCatalogue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolCatalogue.swift; sourceTree = "<group>"; };
 		EFE023B4298FBF8400022745 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		EFE023B5298FBF8400022745 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		EFE023B6298FBF8400022745 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -166,7 +168,7 @@
 		EFF44778298FB79D00458A4C /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		EFF4477A298FB79D00458A4C /* InfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoCell.xib; sourceTree = "<group>"; };
 		EFF4477B298FB79D00458A4C /* InfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
-		EFF4477D298FB79D00458A4C /* ImageCatalogue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCatalogue.swift; sourceTree = "<group>"; };
+		EFF4477D298FB79D00458A4C /* ColorCatalogue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCatalogue.swift; sourceTree = "<group>"; };
 		EFF4477F298FB79D00458A4C /* PixabayImageResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixabayImageResult.swift; sourceTree = "<group>"; };
 		EFF44781298FB79D00458A4C /* RegisterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		EFF44783298FB79D00458A4C /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
@@ -494,7 +496,8 @@
 		EFF4477C298FB79D00458A4C /* Catalogue */ = {
 			isa = PBXGroup;
 			children = (
-				EFF4477D298FB79D00458A4C /* ImageCatalogue.swift */,
+				EFF4477D298FB79D00458A4C /* ColorCatalogue.swift */,
+				EF30ECB029902E2D00AD2FA6 /* SFSymbolCatalogue.swift */,
 			);
 			path = Catalogue;
 			sourceTree = "<group>";
@@ -897,7 +900,7 @@
 				EFF447B0298FB79D00458A4C /* CGRect.swift in Sources */,
 				EFF447A6298FB79D00458A4C /* Endpoint.swift in Sources */,
 				EFF447B2298FB79D00458A4C /* ViewController.swift in Sources */,
-				EFF447C3298FB79D00458A4C /* ImageCatalogue.swift in Sources */,
+				EFF447C3298FB79D00458A4C /* ColorCatalogue.swift in Sources */,
 				EFF447C7298FB79D00458A4C /* ImageServiceInterface.swift in Sources */,
 				EFF447CD298FB79D00458A4C /* LoginServiceInterface.swift in Sources */,
 				EFF447A4298FB79D00458A4C /* UIImage+Cache.swift in Sources */,
@@ -916,6 +919,7 @@
 				EFF447C8298FB79D00458A4C /* PixabayService.swift in Sources */,
 				EFF447B1298FB79D00458A4C /* Insets.swift in Sources */,
 				EFF4471D298FB74200458A4C /* AppDelegate.swift in Sources */,
+				EF30ECB129902E2D00AD2FA6 /* SFSymbolCatalogue.swift in Sources */,
 				EFF447A7298FB79D00458A4C /* ViewHeirachy.swift in Sources */,
 				EFF447D6298FB79D00458A4C /* RegisterViewModel.swift in Sources */,
 				EFE023C7298FCA2B00022745 /* ImageDetailViewController.swift in Sources */,

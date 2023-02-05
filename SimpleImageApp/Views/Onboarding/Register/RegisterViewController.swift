@@ -110,7 +110,7 @@ class RegisterViewController: ViewController {
     }
     
     private var textFieldCheck: Driver<Bool> {
-        confirmPasswordTextField.rx.textEdittingDone
+        passwordTextField.rx.textEdittingDone
             .withLatestFrom(isEqual)
     }
     
