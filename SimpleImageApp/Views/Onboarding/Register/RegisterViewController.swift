@@ -73,12 +73,19 @@ class RegisterViewController: ViewController {
     private func bind() {
         
         Driver.combineLatest(isValid, isEqual) { TextFieldValidity(isValid: $0, isEqual: $1) }
-        //.distinctUntilChanged()
+            .distinctUntilChanged()
             .drive(enableRegisterButton)
             .disposed(by: bag)
         
         textFieldCheck
             .drive(confirmPasswordMessage)
+            .disposed(by: bag)
+        
+        isEqual
+            .filter { $0 }
+            .drive(onNext: { [weak self] _ in
+                self?.confirmPasswordTextField.sendErrorMessage(message: nil)
+            })
             .disposed(by: bag)
         
         let registerModel = Driver.combineLatest(emailTextField.rx.text, passwordTextField.rx.text, ageTextField.rx.text) { RegisterModel(email: $0, password: $1, age: $2) }
@@ -110,10 +117,9 @@ class RegisterViewController: ViewController {
     }
     
     private var textFieldCheck: Driver<Bool> {
-        passwordTextField.rx.textEdittingDone
+        confirmPasswordTextField.rx.textEdittingDone
             .withLatestFrom(isEqual)
     }
-    
     
     private var enableRegisterButton: Binder<TextFieldValidity> {
         Binder(self) { host, validity in
@@ -123,10 +129,11 @@ class RegisterViewController: ViewController {
     
     private var confirmPasswordMessage: Binder<Bool> {
         Binder(self) { host, isEqual in
+            print("(DEBUG) is equal:" , isEqual)
             if isEqual {
                 host.confirmPasswordTextField.sendErrorMessage(message: nil)
             } else {
-                host.confirmPasswordTextField.sendErrorMessage(message: "Passwords must match")
+                host.confirmPasswordTextField.sendErrorMessage(message: Constants.passwordMessage)
             }
         }
     }
@@ -144,5 +151,13 @@ class RegisterViewController: ViewController {
                 break
             }
         }
+    }
+}
+
+
+extension RegisterViewController {
+    
+    enum Constants {
+        static let passwordMessage: String = "Passwords must match"
     }
 }

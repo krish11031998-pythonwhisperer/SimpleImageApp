@@ -40,6 +40,7 @@ class TextFieldView: UIView {
     private func setupView() {
         commonInit()
         titleLabel.text = type.placeHolder
+        titleLabel.font = .preferredFont(forTextStyle: .caption1)
         infoLabel.isHidden = true
         infoLabel.textColor = .red
         infoLabel.font = .systemFont(ofSize: 12, weight: .medium)
