@@ -1,20 +1,23 @@
 //
-//  OnboardingVIewController.swift
-//  VuzAssessment
+//  NewOnboardingViewController.swift
+//  SimpleImageApp
 //
-//  Created by Krishna Venkatramani on 04/02/2023.
+//  Created by Krishna Venkatramani on 05/02/2023.
 //
 
-import Foundation
 import UIKit
-import RxCocoa
 import RxSwift
+import RxCocoa
 
-class OnboardingVIewController: UIViewController {
+class OnboardingViewController: ViewController {
     
     private let viewModel: OnboardingViewModel
-    private lazy var loginButton: CustomButton = { .init() }()
-    private lazy var registerButton: CustomButton = { .init() }()
+    @IBOutlet weak var headline: UILabel!
+    @IBOutlet weak var subHeadline: UILabel!
+    @IBOutlet weak var loginButton: CustomButton!
+    @IBOutlet weak var registerButton: CustomButton!
+    @IBOutlet weak var mainStack: UIStackView!
+    
     private var bag: DisposeBag = .init()
     init() {
         self.viewModel = .init()
@@ -49,27 +52,17 @@ class OnboardingVIewController: UIViewController {
                     self?.navigationController?.pushViewController(LoginViewController(viewModel: .init()), animated: true)
                 case .register:
                     self?.navigationController?.pushViewController(RegisterViewController(), animated: true)
+                default:
+                    break
                 }
             }
             .disposed(by: bag)
     }
     
     private func setupView() {
-        let stack = UIStackView()
-        stack.axis = .vertical
-        stack.spacing = 10
-        
-        let buttonStack: UIStackView = .init()
-        buttonStack.spacing = 8
-        buttonStack.distribution = .fillEqually
-        
+        mainStack.setCustomSpacing(24, after: subHeadline)
         loginButton.setTitle("Login", for: .normal)
         registerButton.setTitle("Register", for: .normal)
-        
-        [loginButton, registerButton].forEach(buttonStack.addArrangedSubview(_:))
-        
-        view.addSubview(buttonStack)
-        view.setFittingContraints(childView: buttonStack, leading: 16, trailing: 16, centerX: 0, centerY: 0)
-        view.backgroundColor = .surfaceBackground
     }
+
 }

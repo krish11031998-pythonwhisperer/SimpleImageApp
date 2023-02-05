@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingViewController" customModule="SimpleImageApp" customModuleProvider="target">
+            <connections>
+                <outlet property="headline" destination="gxN-GQ-sxH" id="5Z0-e8-H4E"/>
+                <outlet property="loginButton" destination="MCj-Jq-xDy" id="lTY-o9-aMM"/>
+                <outlet property="mainStack" destination="WHT-Qv-5el" id="D1H-Us-apI"/>
+                <outlet property="registerButton" destination="DA1-Z6-yQ4" id="quO-Yc-mLA"/>
+                <outlet property="subHeadline" destination="I1P-LQ-g3u" id="a3c-Go-0PH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="WHT-Qv-5el">
+                    <rect key="frame" x="16" y="326.33333333333331" width="361" height="199.33333333333331"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pixabay Explorer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxN-GQ-sxH">
+                            <rect key="frame" x="81.000000000000014" y="0.0" width="199.33333333333337" height="33.666666666666664"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find your favorite pictures from the community" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1P-LQ-g3u">
+                            <rect key="frame" x="42" y="49.666666666666686" width="277" height="49"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCj-Jq-xDy" customClass="CustomButton" customModule="SimpleImageApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="114.66666666666667" width="361" height="34.333333333333329"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DA1-Z6-yQ4" customClass="CustomButton" customModule="SimpleImageApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="165" width="361" height="34.333333333333343"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="surfaceBackground"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="DA1-Z6-yQ4" secondAttribute="trailing" id="UTo-PN-QRi"/>
+                        <constraint firstItem="MCj-Jq-xDy" firstAttribute="leading" secondItem="WHT-Qv-5el" secondAttribute="leading" id="Xx3-Ke-QPN"/>
+                        <constraint firstAttribute="trailing" secondItem="MCj-Jq-xDy" secondAttribute="trailing" id="ezE-B7-Paw"/>
+                        <constraint firstItem="DA1-Z6-yQ4" firstAttribute="leading" secondItem="WHT-Qv-5el" secondAttribute="leading" id="ow2-rI-51r"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="surfaceBackground"/>
+            <constraints>
+                <constraint firstItem="WHT-Qv-5el" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="KCf-20-9HN"/>
+                <constraint firstItem="WHT-Qv-5el" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="oOv-gn-lXh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WHT-Qv-5el" secondAttribute="trailing" constant="16" id="whs-RP-C0L"/>
+            </constraints>
+            <point key="canvasLocation" x="-166" y="-38"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="surfaceBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

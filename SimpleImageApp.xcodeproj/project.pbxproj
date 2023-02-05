@@ -19,6 +19,8 @@
 		EFE023CC298FCBD700022745 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE023CA298FCBD700022745 /* LoginViewController.xib */; };
 		EFE023CF298FD01300022745 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE023CD298FD01300022745 /* RegisterViewController.swift */; };
 		EFE023D0298FD01300022745 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE023CE298FD01300022745 /* RegisterViewController.xib */; };
+		EFE023D3298FD95F00022745 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE023D1298FD95F00022745 /* OnboardingViewController.swift */; };
+		EFE023D4298FD95F00022745 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE023D2298FD95F00022745 /* OnboardingViewController.xib */; };
 		EFF4471D298FB74200458A4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4471C298FB74200458A4C /* AppDelegate.swift */; };
 		EFF4471F298FB74200458A4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4471E298FB74200458A4C /* SceneDelegate.swift */; };
 		EFF44726298FB74300458A4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFF44725298FB74300458A4C /* Assets.xcassets */; };
@@ -72,7 +74,6 @@
 		EFF447CD298FB79D00458A4C /* LoginServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4478F298FB79D00458A4C /* LoginServiceInterface.swift */; };
 		EFF447D0298FB79D00458A4C /* ImageDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44795298FB79D00458A4C /* ImageDetailViewModel.swift */; };
 		EFF447D2298FB79D00458A4C /* OnboardingViewModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44799298FB79D00458A4C /* OnboardingViewModelInterface.swift */; };
-		EFF447D3298FB79D00458A4C /* OnboardingVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4479A298FB79D00458A4C /* OnboardingVIewController.swift */; };
 		EFF447D4298FB79D00458A4C /* OnboardingNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4479B298FB79D00458A4C /* OnboardingNavigation.swift */; };
 		EFF447D6298FB79D00458A4C /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4479E298FB79D00458A4C /* RegisterViewModel.swift */; };
 		EFF447D7298FB79D00458A4C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF447A0298FB79D00458A4C /* LoginViewModel.swift */; };
@@ -113,6 +114,8 @@
 		EFE023CA298FCBD700022745 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		EFE023CD298FD01300022745 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		EFE023CE298FD01300022745 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		EFE023D1298FD95F00022745 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		EFE023D2298FD95F00022745 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
 		EFF44719298FB74200458A4C /* SimpleImageApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleImageApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFF4471C298FB74200458A4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFF4471E298FB74200458A4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -170,7 +173,6 @@
 		EFF4478F298FB79D00458A4C /* LoginServiceInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginServiceInterface.swift; sourceTree = "<group>"; };
 		EFF44795298FB79D00458A4C /* ImageDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDetailViewModel.swift; sourceTree = "<group>"; };
 		EFF44799298FB79D00458A4C /* OnboardingViewModelInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewModelInterface.swift; sourceTree = "<group>"; };
-		EFF4479A298FB79D00458A4C /* OnboardingVIewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingVIewController.swift; sourceTree = "<group>"; };
 		EFF4479B298FB79D00458A4C /* OnboardingNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingNavigation.swift; sourceTree = "<group>"; };
 		EFF4479E298FB79D00458A4C /* RegisterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		EFF447A0298FB79D00458A4C /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -561,7 +563,8 @@
 			children = (
 				EFF4479B298FB79D00458A4C /* OnboardingNavigation.swift */,
 				EFF44799298FB79D00458A4C /* OnboardingViewModelInterface.swift */,
-				EFF4479A298FB79D00458A4C /* OnboardingVIewController.swift */,
+				EFE023D1298FD95F00022745 /* OnboardingViewController.swift */,
+				EFE023D2298FD95F00022745 /* OnboardingViewController.xib */,
 			);
 			path = OnboardingMain;
 			sourceTree = "<group>";
@@ -697,6 +700,7 @@
 			files = (
 				EFE023C8298FCA2B00022745 /* ImageDetailViewController.xib in Resources */,
 				EFF447BF298FB79D00458A4C /* TextFieldView.xib in Resources */,
+				EFE023D4298FD95F00022745 /* OnboardingViewController.xib in Resources */,
 				EFF447C1298FB79D00458A4C /* InfoCell.xib in Resources */,
 				EFE023CC298FCBD700022745 /* LoginViewController.xib in Resources */,
 				EFE023D0298FD01300022745 /* RegisterViewController.xib in Resources */,
@@ -834,6 +838,7 @@
 			files = (
 				EFF447AC298FB79D00458A4C /* TableSection.swift in Sources */,
 				EFF447C5298FB79D00458A4C /* RegisterModel.swift in Sources */,
+				EFE023D3298FD95F00022745 /* OnboardingViewController.swift in Sources */,
 				EFF447AD298FB79D00458A4C /* TableView+Rx.swift in Sources */,
 				EFF447AB298FB79D00458A4C /* TableCellProvider.swift in Sources */,
 				EFF447AE298FB79D00458A4C /* TableViewExtension.swift in Sources */,
@@ -846,7 +851,6 @@
 				EFE023CB298FCBD700022745 /* LoginViewController.swift in Sources */,
 				EFF447C4298FB79D00458A4C /* PixabayImageResult.swift in Sources */,
 				EFF447D4298FB79D00458A4C /* OnboardingNavigation.swift in Sources */,
-				EFF447D3298FB79D00458A4C /* OnboardingVIewController.swift in Sources */,
 				EFF447B3298FB79D00458A4C /* ViewController+NavBar.swift in Sources */,
 				EFF447B5298FB79D00458A4C /* ActionProvider.swift in Sources */,
 				EFF447A5298FB79D00458A4C /* URLRequest.swift in Sources */,
