@@ -31,6 +31,7 @@ class RegisterService: RegisterServiceInterface {
             if 18...99 ~= age {
                 UserDefaultStoreKey.email.setValue(email)
                 UserDefaultStoreKey.password.setValue(password)
+                UserDefaultStoreKey.loggedIn.setValue(true)
                 observable.onNext(true)
             } else {
                 observable.onError(RegisterError.userAge)

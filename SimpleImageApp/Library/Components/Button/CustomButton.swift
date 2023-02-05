@@ -32,8 +32,7 @@ class CustomButton: UIButton {
     private func setupView() {
         configuration = buttonConfiguration
         setFrame(height: 50)
-        widthAnchor.constraint(greaterThanOrEqualToConstant: 50).isActive  = true
-        //titleLabel?.font = .systemFont(ofSize: 10, weight: .semibold)
+        widthAnchor.constraint(greaterThanOrEqualToConstant: 30).isActive  = true
     }
     
     override var isEnabled: Bool {

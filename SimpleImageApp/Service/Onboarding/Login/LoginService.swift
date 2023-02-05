@@ -37,6 +37,7 @@ class LoginService: LoginServiceInterface {
             
             if username == storedEmail && password == storedPassword {
                 observable.onNext(true)
+                UserDefaultStoreKey.loggedIn.setValue(true)
             } else {
                 observable.onError(LoginError.incorrectEmailOrPassword)
             }

@@ -12,6 +12,7 @@ import RxCocoa
 class HomeViewController: ViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    private lazy var logoutButton: UIButton = { .init() }()
     private let viewModel: HomeViewModel
     private var bag: DisposeBag = .init()
     //MARK: - Overriden Methods
@@ -27,8 +28,8 @@ class HomeViewController: ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        setupNavBar(title: "Pixabay Images")
+        mainNavBar(title: "Pixabay Images")
+        setupLogoutButton()
         view.backgroundColor = .surfaceBackground
         bind()
     }
@@ -39,7 +40,11 @@ class HomeViewController: ViewController {
             .distinctUntilChanged()
             .asDriver(onErrorJustReturn: false)
         
-        let input = HomeViewModel.Input(loadNextPage: nextPage)
+        let logout = logoutButton.rx.controlEvent(.touchUpInside)
+            .map { _ in ()}
+            .asDriver(onErrorJustReturn: ())
+        
+        let input = HomeViewModel.Input(loadNextPage: nextPage, logout: logout)
         
         let output = viewModel.transform(input)
         
@@ -55,6 +60,9 @@ class HomeViewController: ViewController {
                 switch nav {
                 case .toImage(let image):
                     self?.navigationController?.pushViewController(ImageDetailViewController(viewModel: .init(selectedImage: image)), animated: true)
+                case .onboarding:
+                    UserDefaultStoreKey.loggedIn.setValue(false)
+                    self?.Onboarding()
                 default:
                     break
                 }
@@ -62,5 +70,20 @@ class HomeViewController: ViewController {
             .disposed(by: bag)
     
         tableView.rx.didSelectItemDisposable.disposed(by: bag)
+    }
+    
+    private func setupLogoutButton() {
+        logoutButton.setTitle("Logout", for: .normal)
+        navigationItem.rightBarButtonItem = .init(customView: logoutButton)
+    }
+    
+    private func Onboarding() {
+        guard let topMost = navigationController?.topViewController else { return }
+        if topMost === self {
+            let vc = OnboardingViewController()
+            navigationController?.setViewControllers([vc], animated: true)
+        } else {
+            navigationController?.popViewController(animated: true)
+        }
     }
 }

@@ -31,6 +31,7 @@ class OnboardingViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        mainNavBar(title: "")
         bind()
     }
     

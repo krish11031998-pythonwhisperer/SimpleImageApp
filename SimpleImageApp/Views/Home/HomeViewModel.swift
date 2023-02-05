@@ -26,6 +26,7 @@ class HomeViewModel: ViewModel {
     
     struct Input {
         let loadNextPage: Driver<Bool>
+        let logout: Driver<()>
     }
     struct Output {
         let section: Driver<[TableSection]>
@@ -49,14 +50,17 @@ class HomeViewModel: ViewModel {
             }
             .asDriver(onErrorJustReturn: [])
         
-        let navigation: Driver<Navigation> = selectedImage
+        let image: Driver<Navigation> = selectedImage
             .compactMap {
                 guard let img = $0 else { return nil }
                 return Navigation.toImage(image: img)
             }
             .asDriver(onErrorJustReturn: Navigation.none)
+        let logout = input.logout.map { _ in Navigation.onboarding }
         
-        return Output(section: initial, navigation: navigation)
+        let nav = Driver.merge([image, logout])
+        
+        return Output(section: initial, navigation: nav)
     }
     
     
@@ -78,6 +82,7 @@ extension HomeViewModel {
     
     enum Navigation {
         case toImage(image: PixabayImage)
+        case onboarding
         case none
     }
     
