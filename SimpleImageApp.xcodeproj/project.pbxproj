@@ -17,6 +17,8 @@
 		EFE023C8298FCA2B00022745 /* ImageDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE023C6298FCA2B00022745 /* ImageDetailViewController.xib */; };
 		EFE023CB298FCBD700022745 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE023C9298FCBD700022745 /* LoginViewController.swift */; };
 		EFE023CC298FCBD700022745 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE023CA298FCBD700022745 /* LoginViewController.xib */; };
+		EFE023CF298FD01300022745 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE023CD298FD01300022745 /* RegisterViewController.swift */; };
+		EFE023D0298FD01300022745 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE023CE298FD01300022745 /* RegisterViewController.xib */; };
 		EFF4471D298FB74200458A4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4471C298FB74200458A4C /* AppDelegate.swift */; };
 		EFF4471F298FB74200458A4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4471E298FB74200458A4C /* SceneDelegate.swift */; };
 		EFF44726298FB74300458A4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFF44725298FB74300458A4C /* Assets.xcassets */; };
@@ -72,7 +74,6 @@
 		EFF447D2298FB79D00458A4C /* OnboardingViewModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF44799298FB79D00458A4C /* OnboardingViewModelInterface.swift */; };
 		EFF447D3298FB79D00458A4C /* OnboardingVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4479A298FB79D00458A4C /* OnboardingVIewController.swift */; };
 		EFF447D4298FB79D00458A4C /* OnboardingNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4479B298FB79D00458A4C /* OnboardingNavigation.swift */; };
-		EFF447D5298FB79D00458A4C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4479D298FB79D00458A4C /* RegisterViewController.swift */; };
 		EFF447D6298FB79D00458A4C /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4479E298FB79D00458A4C /* RegisterViewModel.swift */; };
 		EFF447D7298FB79D00458A4C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF447A0298FB79D00458A4C /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -110,6 +111,8 @@
 		EFE023C6298FCA2B00022745 /* ImageDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageDetailViewController.xib; sourceTree = "<group>"; };
 		EFE023C9298FCBD700022745 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EFE023CA298FCBD700022745 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		EFE023CD298FD01300022745 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		EFE023CE298FD01300022745 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		EFF44719298FB74200458A4C /* SimpleImageApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleImageApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFF4471C298FB74200458A4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFF4471E298FB74200458A4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -169,7 +172,6 @@
 		EFF44799298FB79D00458A4C /* OnboardingViewModelInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewModelInterface.swift; sourceTree = "<group>"; };
 		EFF4479A298FB79D00458A4C /* OnboardingVIewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingVIewController.swift; sourceTree = "<group>"; };
 		EFF4479B298FB79D00458A4C /* OnboardingNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingNavigation.swift; sourceTree = "<group>"; };
-		EFF4479D298FB79D00458A4C /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		EFF4479E298FB79D00458A4C /* RegisterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		EFF447A0298FB79D00458A4C /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		FB4D53978D656605C62D3F9A /* Pods-SimpleImageApp-SimpleImageAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleImageApp-SimpleImageAppUITests.release.xcconfig"; path = "Target Support Files/Pods-SimpleImageApp-SimpleImageAppUITests/Pods-SimpleImageApp-SimpleImageAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -567,8 +569,9 @@
 		EFF4479C298FB79D00458A4C /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				EFF4479D298FB79D00458A4C /* RegisterViewController.swift */,
 				EFF4479E298FB79D00458A4C /* RegisterViewModel.swift */,
+				EFE023CD298FD01300022745 /* RegisterViewController.swift */,
+				EFE023CE298FD01300022745 /* RegisterViewController.xib */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -696,6 +699,7 @@
 				EFF447BF298FB79D00458A4C /* TextFieldView.xib in Resources */,
 				EFF447C1298FB79D00458A4C /* InfoCell.xib in Resources */,
 				EFE023CC298FCBD700022745 /* LoginViewController.xib in Resources */,
+				EFE023D0298FD01300022745 /* RegisterViewController.xib in Resources */,
 				EFF44729298FB74300458A4C /* LaunchScreen.storyboard in Resources */,
 				EFF447B7298FB79D00458A4C /* LargeImageCell.xib in Resources */,
 				EFF44726298FB74300458A4C /* Assets.xcassets in Resources */,
@@ -838,6 +842,7 @@
 				EFF447A2298FB79D00458A4C /* UIImageView+UIImage.swift in Sources */,
 				EFF447B6298FB79D00458A4C /* LargeImageCell.swift in Sources */,
 				EFF447CA298FB79D00458A4C /* RegisterServiceInterface.swift in Sources */,
+				EFE023CF298FD01300022745 /* RegisterViewController.swift in Sources */,
 				EFE023CB298FCBD700022745 /* LoginViewController.swift in Sources */,
 				EFF447C4298FB79D00458A4C /* PixabayImageResult.swift in Sources */,
 				EFF447D4298FB79D00458A4C /* OnboardingNavigation.swift in Sources */,
@@ -857,7 +862,6 @@
 				EFF447C3298FB79D00458A4C /* ImageCatalogue.swift in Sources */,
 				EFF447C7298FB79D00458A4C /* ImageServiceInterface.swift in Sources */,
 				EFF447CD298FB79D00458A4C /* LoginServiceInterface.swift in Sources */,
-				EFF447D5298FB79D00458A4C /* RegisterViewController.swift in Sources */,
 				EFF447A4298FB79D00458A4C /* UIImage+Cache.swift in Sources */,
 				EFF447C0298FB79D00458A4C /* CustomButton.swift in Sources */,
 				EFF447A3298FB79D00458A4C /* UIImage+URL.swift in Sources */,

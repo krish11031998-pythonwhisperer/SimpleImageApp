@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="SimpleImageApp" customModuleProvider="target">
+            <connections>
+                <outlet property="ageTextField" destination="3ak-VQ-ALD" id="Q8Y-zY-xtn"/>
+                <outlet property="confirmPasswordTextField" destination="YJe-Go-lPO" id="IOm-eo-VgZ"/>
+                <outlet property="emailTextField" destination="1Jr-Qg-n7H" id="4U5-bl-eK7"/>
+                <outlet property="loginButton" destination="VhD-p6-DGS" id="y5r-FM-Gec"/>
+                <outlet property="passwordTextField" destination="reR-Re-caI" id="mc9-ii-9tb"/>
+                <outlet property="registerButton" destination="YhQ-ii-zTo" id="B5R-Jh-5Il"/>
+                <outlet property="stack" destination="cE2-RY-wpV" id="x1H-UP-2XT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="cE2-RY-wpV">
+                    <rect key="frame" x="16" y="79" width="361" height="739"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Jr-Qg-n7H" customClass="TextFieldView" customModule="SimpleImageApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="50"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="reR-Re-caI" customClass="TextFieldView" customModule="SimpleImageApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="62" width="361" height="50"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YJe-Go-lPO" customClass="TextFieldView" customModule="SimpleImageApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="123.99999999999997" width="361" height="510.33333333333326"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ak-VQ-ALD" customClass="TextFieldView" customModule="SimpleImageApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="646.33333333333337" width="361" height="0.0"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YhQ-ii-zTo" customClass="CustomButton" customModule="SimpleImageApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="658.33333333333337" width="361" height="34.333333333333371"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhD-p6-DGS" customClass="CustomButton" customModule="SimpleImageApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="704.66666666666663" width="361" height="34.333333333333371"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="cE2-RY-wpV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="BhD-f8-Vr5"/>
+                <constraint firstItem="cE2-RY-wpV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Sjt-fq-rwh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cE2-RY-wpV" secondAttribute="bottom" id="bO2-0g-cYh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cE2-RY-wpV" secondAttribute="trailing" constant="16" id="h5m-u2-q9i"/>
+            </constraints>
+            <point key="canvasLocation" x="131" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
